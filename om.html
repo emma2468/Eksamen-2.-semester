@@ -125,7 +125,7 @@
             klon.querySelector(".image").src = om.acf.image;
 
             klon.querySelector("[data-title]").textContent = om.title.rendered;
-            klon.querySelector("[data-text]").textContent = om.content.rendered;
+            klon.querySelector("[data-text]").innerHTML = om.content.rendered;
 
             omContainer.appendChild(klon);
 
