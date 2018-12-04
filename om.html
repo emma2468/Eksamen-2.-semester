@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Style Editor Kontakt</title>
+    <title>Style Editor Om</title>
 
     <link rel="stylesheet" href="/css/om.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
@@ -18,38 +18,63 @@
 
 
 
-    <section id="om">
+      <section class="om" data-container></section>
+      <template data-template>
+          <article class="omListview">
+             <img class="image" src="" alt="">
+              <h2 data-title></h2>
+              <p data-text></p>
+
+          </article>
 
 
-       <div class="row">
-
-
-        <div class="column">
-    <img src="img/IMG_2707.JPG" alt="potræt"style="width:400px;height:500px;">
-
-        </div>
-
-        <div class="column_2">
-        <h1>Anette Thyrsted</h1>
-           <p>“Mine opgaver er sjældent ens, det holder mig til ilden og
-            kræver konstant forandringsparathed. Og jeg er vild med det!”    </p>
-
-            <p class="1">Anette Thyrsted | <p1> Stifter af Style Editor</p1>  </p>
-
-            <h4>Meningen med at bruge Lorem Ipsumer, at teksten indeholder mere eller min-dre almindelig tekstopbygning i modsæt-
-                ning til “Tekst her – og mere tekst her”,mens det samtidigt ligner almindelig tekst. Mange lagnere bruger Lorem Ip-
-                sum som fyldtekst. En søgning på Lorem Ipsum a blandt andet et resultat af humor).</h4>
+      </template>
 
 
 
+<script>
 
-        </div>
+    document.addEventListener("DOMContentLoaded", getJSON);
+
+    let om;
+
+    let omTemplate = document.querySelector("[data-template]");
+    let omContainer = document.querySelector("[data-container]");
+
+    async function getJSON(){
+        let jasonData = await
+        fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/om?slug=anette-thyrsted/");
+        om = await jasonData.json();
+        visOm();
+        console.log (om);
+    }
 
 
-        </div>
+    function visOm() {
+        console.log(om);
+        om.forEach(om => {
+            let klon = omTemplate.cloneNode(true).content;
+            klon.querySelector(".image").src = om.acf.image;
+            klon.querySelector("[data-title]").textContent = om.title.rendered;
+            klon.querySelector("[data-text]").textContent = om.content.rendered;
+            omContainer.appendChild(klon);
 
-    </section>
+        }
+
+                  )
+    }
+
+
+
+
+
+
+
+
+
+      </script>
 
   </body>
+
 
 </html>

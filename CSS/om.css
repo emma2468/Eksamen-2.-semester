@@ -1,44 +1,4 @@
-#om{
-     justify-content: center;
+.omListview p{
+   color: white;
 
 }
-
-.column{
-    text-align: center;
-}
-
-column_2{
-background-color: #E9B935;
-}
-
-
-
-
-
-@media screen and (min-width:768px){
-
-
-    #om{
-
-
-
-
-
-      }
-
-  .column {
-    float: left;
-    width: 50%;
-    margin-bottom: 50px;
-    font-size: 1.3em;
-}
-
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-          }
-
