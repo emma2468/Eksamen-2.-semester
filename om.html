@@ -5,9 +5,67 @@
     <meta charset="UTF-8">
     <title>Style Editor Om</title>
 
-    <link rel="stylesheet" href="/css/om.css">
+    <link rel="stylesheet" href="/css/#">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
 
+
+  <style>
+
+      body{
+        display: block;
+            font-family: 'Heebo', sans-serif;
+      }
+
+      .image{
+          width: 100%;
+      }
+
+      .omListview{
+          background-color: #E9B935;
+      }
+
+      h2{
+          color: #0B584D;
+      }
+
+      p{
+          color: white;
+      }
+
+
+      @media screen and (min-width:768px){
+
+        .image{
+              height: 600px;
+              width: 90%;
+              margin-top: 30px;
+            margin-left: 10px;
+
+          }
+
+            .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+          font-size: 1.3em;
+}
+
+
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+      }
+
+
+
+      </style>
 
   </head>
 
@@ -21,10 +79,21 @@
       <section class="om" data-container></section>
       <template data-template>
           <article class="omListview">
+
+
+
+                 <div class="row">
+
+                 <div class="column">
              <img class="image" src="" alt="">
+                     </div>
+
+                     <div class="column">
               <h2 data-title></h2>
               <p data-text></p>
 
+                     </div>
+              </div>
           </article>
 
 
@@ -42,8 +111,7 @@
     let omContainer = document.querySelector("[data-container]");
 
     async function getJSON(){
-        let jasonData = await
-        fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/om?slug=anette-thyrsted/");
+    let jasonData = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/om?slug=anette-thyrsted%22/");
         om = await jasonData.json();
         visOm();
         console.log (om);
@@ -55,8 +123,10 @@
         om.forEach(om => {
             let klon = omTemplate.cloneNode(true).content;
             klon.querySelector(".image").src = om.acf.image;
+
             klon.querySelector("[data-title]").textContent = om.title.rendered;
             klon.querySelector("[data-text]").textContent = om.content.rendered;
+
             omContainer.appendChild(klon);
 
         }
