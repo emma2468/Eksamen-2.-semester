@@ -1,0 +1,106 @@
+
+body{
+        margin: 0 auto;
+
+
+      }
+
+
+#Kontakt_information{
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+
+
+      }
+
+#Kontakt_information h1{
+          color: #0B584D;
+          font-family: 'Heebo', sans-serif;
+             font-weight: 400;
+
+
+      }
+
+
+#Kontakt_information h4, a{
+           font-family: 'Heebo', sans-serif;
+          font-weight: 300;
+          color: rgba(0, 0, 0, 0.56);
+          text-decoration: none;
+
+      }
+
+
+#under_information{
+          text-align: center;
+          margin-top: 80px;
+      }
+
+.kontor{
+          margin-top: 40px;
+      }
+
+#under_information h1{
+
+           color: #B07761;
+          font-family: 'Heebo', sans-serif;
+           font-weight: 400;
+
+      }
+
+#under_information h2{
+            color: #E9B935;
+          font-family: 'Heebo', sans-serif;
+          font-weight: 400;
+      }
+
+#under_information h4{
+            font-family: 'Heebo', sans-serif;
+          font-weight: 300;
+          color: rgba(0, 0, 0, 0.56);}
+
+h5{
+          margin-top: 60px;
+            color: black;
+          font-family: 'Heebo', sans-serif;
+           font-weight: 300;
+          font-size: 1em;
+          font-style: italic;
+
+      }
+
+@media screen and (min-width:768px){
+
+
+    #Kontakt_information{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #65b0ba;
+    width: 800px;
+    padding: 25px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 1.5em;
+
+
+
+
+      }
+
+    .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+          font-size: 1.3em;
+}
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+          }
+
