@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" href="CSS/sinlge_eventstyling.css" type="text/css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Event Styling (s)</title>
+</head>
+
+<body>
+   <main class="container">
+       <section class="data_container">
+           <article>
+               <h1 class="heading_events" data-title1></h1>
+               <img src="" alt="">
+           </article>
+       </section>
+   </main>
+
+   <script>
+       document.addEventListener("DOMContentLoaded", getJson);
+
+        let urlParams = new URLSearchParams(window.location.search);
+       let heading = urlParams.get("heading");
+       console.log(heading);
+
+       async function getJson(){
+           console.log("jsonDownloaded");
+           let dataJson = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/event/?per_page=100");
+           events = await dataJson.json();
+           visEvents();
+       }
+
+       function visEvents(){
+           let klon = document.querySelector(".data_container");
+           events.forEach(event =>{
+               klon.querySelector("[data-title1]").textContent = events.title.rendered;
+                klon.querySelector("img").src = events.acf.image;
+           })
+       }
+
+
+    </script>
+</body>
+</html>

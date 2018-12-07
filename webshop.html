@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Style Editor Webshop</title>
+
+    <link rel="stylesheet" href="CSS/webshop.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
+    <style>
+        main{
+           column-count: 2;
+
+        }
+
+        #sorteringsknapper{
+            background-color: #E6C9C7;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <?php include "header.html";?>
+
+    <main>
+
+<!--       Section til indhold af modale vinduet, når man trykker på en vare-->
+
+        <section id="modal">
+            <div id="modal_content">
+                <button class="modal_close">X</button>
+
+
+                <h2 class="modal_navn"></h2>
+                <div class="modal_langbeskrivelse"></div>
+                <img class="modal_image" src="" alt="">
+                <div class="modal_pris"></div>
+                <div class="modal_kob"></div>
+
+
+            </div>
+        </section>
+
+
+<!--       section til sorteringsklapperne-->
+
+        <section id="sorteringsknapper">
+            <h1></h1>
+            <div class="knapper">
+                <button class="menu_item" data_kategori="alle">Alle</button>
+                <button class="menu_item" data_kategori="Musik">Glas</button>
+                <button class="menu_item" data_kategori="Film">Tallerkner</button>
+                <button class="menu_item" data_kategori="Ord">Rodebunke</button>
+
+            </div>
+        </section>
+
+<!--        Template til vare container. Det er hver af varene der er pakket ind i en vare container-->
+        <section class="vare"></section>
+        <template class="vare_template">
+            <article class="vare_container">
+                <div class="title"></div>
+                <div class="pris"></div>
+                <a class="kob" href="" target="_blank"><button class="kob">Køb</button></a>
+                <div class="genre"></div>
+                <img class="image" src="" alt="">
+            </article>
+        </template>
+
+    </main>
+
+    <?php include "footer.html";?>
+
+    <script>
+
+        //Event der gør at HTML loades før json loades
+        document.addEventListener("DOMContentLoaded", getJson);
+
+
+        //variabel til at vise alle events
+        let allVare;
+        //variabler der henter template ned fra html
+        let vareTarget = document.querySelector(".vare_template");
+        let vareOutPut = document.querySelector(".vare");
+
+        vareFilter = "alle";
+
+
+        //variabel til modal vindue section
+        let modal = document.querySelector("#modal");
+
+        //henter json fra wordpress
+        async function getJson() {
+            let jsonObject = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/shop/");
+            allVare = await jsonObject.json();
+            console.log(allVare);
+            visVare();
+        }
+        //forEach loop til sortering af genre / sorteringsknapperne
+        document.querySelectorAll(".menu_item").forEach(knap => {
+            knap.addEventListener("click", filtrering);
+        })
+
+
+        //funtion til filtrering
+        function filtrering() {
+            vareOutPutOutPut.textContent = "";
+           vareFilterFilter = this.getAttribute("data_kategori");
+            visVare();
+        }
+        //function til at vise events
+        function visVare() {
+            console.log("visVare" + vareFilter);
+
+
+            //upsitedown fra wordpress
+            allVare.reverse();
+            allVare.forEach(varen => {
+                //if statement til filtreringen
+                if (vareFilter == varen.acf.genre) {
+                    udskriv();
+                } else if (vareFilter == "alle") {
+                    udskriv();
+                }
+
+
+
+                //udskrivningen når man trykker på en af filtreringsknapperne
+
+                function udskriv() {
+
+                    // indkaldelse af indholdet af hver Vare
+
+                    let klon = vareTarget.cloneNode(true).content;
+
+                    klon.querySelector(".pris").textContent = varen.acf.pris + " kr";
+                    klon.querySelector(".kob").href = varen.acf.kob;
+
+                    klon.querySelector(".title").textContent = varen.title.rendered;
+                    klon.querySelector(".image").src = varen.acf.image;
+
+// når man klikker på følgende elementer går man videre til modal
+                    klon.querySelector(".image").addEventListener("click", () => {
+                        visModal(event);
+                    })
+                    klon.querySelector(".title").addEventListener("click", () => {
+                        visModal(varen);
+                    })
+
+
+
+                  vareOutPut.appendChild(klon);
+                }
+            })
+        }
+
+
+        //modal vindue function
+        function visModal(vare) {
+
+
+            console.log("visModal");
+            modal.classList.add("vis");
+            modal.querySelector(".modal_navn").textContent = vare.title.rendered;
+
+            modal.querySelector(".modal_image").src = vare.acf.image
+
+            modal.querySelector(".modal_pris").textContent = vare.acf.pris + " Kr.";
+            modal.querySelector(".modal_langbeskrivelse").innerHTML = vare.content.rendered;
+
+            modal.querySelector(".kob").href = vare.acf.kob;
+
+            modal.querySelector(".modal_close").addEventListener("click", skjulModal);
+        }
+        //function til at skjule modal igen når man trykker på .modal_close
+        function skjulModal() {
+            console.log("skjulModal");
+            modal.classList.remove("vis");
+        }
+    </script>
+</body>
+</html>

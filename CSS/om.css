@@ -1,0 +1,59 @@
+
+
+
+      body{
+        display: block;
+            font-family: 'Heebo', sans-serif;
+      }
+
+      .image{
+          width: 100%;
+      }
+
+
+
+
+
+      .omListview{
+          background-color: #E9B935;
+      }
+
+      h2{
+          color: #0B584D;
+      }
+
+      p{
+          color: white;
+      }
+
+
+      @media screen and (min-width:768px){
+
+        .image{
+              height: 600px;
+              width: 90%;
+              margin-top: 30px;
+            margin-left: 10px;
+
+          }
+
+            .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+          font-size: 1.3em;
+}
+
+
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+      }
+
