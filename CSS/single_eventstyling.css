@@ -1,0 +1,26 @@
+.singleContainer{
+    background-color: #65b0ba;
+}
+
+.data-navn{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1.5em;
+    font-size: 1.6em;
+    color: #005860;
+}
+
+.data-langbeskrivelse{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1.5em;
+}
+
+.data-billede{
+    width: 100%;
+}

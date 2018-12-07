@@ -4,69 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Style Editor </title>
+    <link rel="stylesheet" href="CSS/single_eventstyling.css" type="text/css">
+    <title>Event Styling</title>
 
-     <style>
-        html {
-            margin: 0;
-        }
-        header {
-        background-color:rgba(250, 147, 9, 0.31);
-        }
-        body {
-            font-family: , sans-serif;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1 {
-            text-transform: capitalize;
-            font-family: sans-serif;
-            text-align: center;
-        }
-        h3 {
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 50px;
-            margin: 0;
-            color: white;
-        }
-        nav {
-            text-align: center;
-        }
-       .menu-item {
-            text-transform: uppercase;
-            font-family: sans-serif;
-            background-color: rgba(250, 147, 9, 0.76);
-            color: white;
-        }
-        .button {}
-        .retContainer {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        @media only screen and (max-width: 1229px) {
-            .retContainer {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        @media only screen and (max-width: 830px) {
-            .ret img {
-                width: 100%
-            }
-            .retContainer {
-                grid-template-columns: 1fr;
-            }
-        }
-        @media only screen and (max-width: 425px) {
-            .ret img {
-                width: 100%
-            }
-            .retContainer {
-                grid-template-columns: 1fr;
-            }
-        }
-        ;
-    </style>
 </head>
 
 <body>
@@ -76,8 +16,9 @@
         <section class="singleContainer">
             <article class="event">
              <h2 class="data-navn"></h2>
+             <p class="data-langbeskrivelse" ></p>
              <img class="data-billede"  src="" alt="">
-            <p class="data-langbeskrivelse" ></p>
+
 
             </article>
         </section>
@@ -117,8 +58,9 @@
 
 
              dest.querySelector(".data-navn").textContent = event.title.rendered;
+            dest.querySelector(".data-langbeskrivelse").innerHTML = event.content.rendered;
              dest.querySelector(".data-billede").src = event.acf.image;
-            dest.querySelector(".data-langbeskrivelse").innerHTML = event.langbeskrivelse;
+
 
 
 
