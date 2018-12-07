@@ -81,9 +81,6 @@ body {
     background-color: #B07762;
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
-
-
-
 }
 
 .projektListview h1 {
@@ -100,6 +97,24 @@ body {
     display: block;
     margin: auto;
     padding-top: 6vw;
+}
+
+@media screen and (min-width:767px){
+    .row1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .projektListview img{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .column1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 }
 
 .videoListview p {
@@ -183,33 +198,6 @@ body {
         font-weight: 100;
         font-size: 1.2em;
     }
-
-    .projektListview {
-        font-size: 1.4em;
-        background-color: #B07762;
-        font-family: 'Heebo', sans-serif;
-        font-weight: 100;
-
-    }
-
-    .projektListview h1 {
-        font-weight: 100;
-        font-size: 2em;
-        text-align: center;
-        font-family: 'Heebo', sans-serif;
-        margin-bottom: -1vw;
-
-
-    }
-
-    .projektListview img {
-        max-width: 330px;
-        display: block;
-        margin: auto;
-        padding-top: 6vw;
-    }
-
-}
 
 @media screen and (min-width:780px) {
     .description {
