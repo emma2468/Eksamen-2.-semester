@@ -1,0 +1,246 @@
+/*slideshow*/
+
+.slideshow {
+    width: 100%;
+    position: relative;
+
+}
+
+.slideshow img {
+    width: 100%;
+}
+
+.slideNumber {
+    color: #fFF;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+}
+
+.slideText {
+    color: #FFF;
+    font-size: 15px;
+    padding: 20px 0px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    margin: 0 20px;
+    background-color: transparent;
+}
+
+.prev:hover,
+.next:hover {
+    font-size: 3.2em;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+body {
+    display: block;
+    font-family: 'Heebo', sans-serif;
+}
+
+.image {
+    width: 100%;
+}
+
+.projektListview {
+    font-size: 0.7em;
+    padding: 1vw;
+    background-color: #B07762;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+}
+
+.projektListview h1 {
+    font-weight: 100;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 9vw;
+
+}
+
+.projektListview img {
+    max-width: 330px;
+    display: block;
+    margin: auto;
+    padding-top: 6vw;
+}
+
+@media screen and (min-width:767px){
+    .row1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .projektListview img{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .column1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+.videoListview p {
+    text-align: center;
+    margin-top: 10vw;
+    margin-bottom: 7vw;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.videoListview video {
+    max-width: 50px;
+}
+
+
+/*om side*/
+
+
+body {
+    margin: 0;
+}
+
+.stylingeventListview {
+    text-align: left;
+    padding: 1vw;
+    margin: 2vw;
+    font-size: 0.7em;
+
+
+}
+
+.stylingeventListview h1 {
+    color: black;
+    font-size: 1.4em;
+
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    padding-top: 1em;
+    color: #e8b931;
+}
+
+.description {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+}
+
+@media screen and (min-width:640px) {
+    .description {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .stylingeventListview {
+        text-align: left;
+        padding: 4vw;
+        font-size: 1.1em;
+
+
+    }
+
+    .stylingeventListview h1 {
+        color: black;
+        font-size: 1.8em;
+
+    }
+
+    .videoListview p {
+        text-align: center;
+        margin-top: 10vw;
+        margin-bottom: 7vw;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 100;
+        font-size: 1.2em;
+    }
+
+@media screen and (min-width:780px) {
+    .description {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+}
+
+@media screen and (min-width:920px) {
+    .description {
+        padding-left: 10em;
+        padding-right: 10em;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .description {
+        padding-left: 14em;
+        padding-right: 14em;
+        font-size: 1.2em;
+    }
+
+    .stylingeventListview {
+        text-align: left;
+        padding: 2vw;
+        margin: 3vw;
+        font-size: 1em;
+
+
+    }
+
+    .stylingeventListview h1 {
+        color: black;
+        font-size: 2em;
+
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .description {
+        padding-left: 16em;
+        padding-right: 16em;
+        font-size: 1.2em;
+    }
+}
