@@ -76,8 +76,13 @@ body {
 }
 
 .projektListview {
-    font-size: 0.7em;
-    padding: 1vw;
+    background-color: #B07762;
+
+}
+
+.projektListview p {
+    font-size: 0.8em;
+    padding: 4vw;
     background-color: #B07762;
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
@@ -89,6 +94,7 @@ body {
     text-align: center;
     font-family: 'Heebo', sans-serif;
     margin-top: 9vw;
+    margin-bottom: -8vw;
 
 }
 
@@ -99,19 +105,19 @@ body {
     padding-top: 6vw;
 }
 
-@media screen and (min-width:767px){
-    .row1{
+@media screen and (min-width:767px) {
+    .row1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
     }
 
-    .projektListview img{
+    .projektListview img {
         grid-column: 2/3;
         grid-row: 1/2;
     }
 
-    .column1{
+    .column1 {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -119,15 +125,15 @@ body {
 
 .videoListview p {
     text-align: center;
-    margin-top: 10vw;
-    margin-bottom: 7vw;
+    margin-top: 15vw;
+    margin-bottom: 10vw;
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
     font-size: 1em;
 }
 
-.videoListview video {
-    max-width: 50px;
+.videoListview iframe {
+    width: 100%;
 }
 
 
@@ -140,9 +146,10 @@ body {
 
 .stylingeventListview {
     text-align: left;
-    padding: 1vw;
+    padding: 6vw;
     margin: 2vw;
     font-size: 0.7em;
+    margin-bottom: 7vw;
 
 
 }
@@ -163,23 +170,17 @@ body {
 }
 
 .description {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
+
     font-family: 'Heebo', sans-serif;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 @media screen and (min-width:640px) {
-    .description {
-        padding-left: 5em;
-        padding-right: 5em;
-    }
+
 
     .stylingeventListview {
         text-align: left;
-        padding: 4vw;
-        font-size: 1.1em;
+        font-size: 0.9em;
 
 
     }
@@ -199,48 +200,163 @@ body {
         font-size: 1.2em;
     }
 
-@media screen and (min-width:780px) {
-    .description {
-        padding-left: 8em;
-        padding-right: 8em;
-    }
-}
-
-@media screen and (min-width:920px) {
-    .description {
-        padding-left: 10em;
-        padding-right: 10em;
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (min-width:1100px) {
-    .description {
-        padding-left: 14em;
-        padding-right: 14em;
-        font-size: 1.2em;
+    .projektListview {
+        font-size: 0.9em;
+        background-color: #B07762;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 100;
     }
 
-    .stylingeventListview {
-        text-align: left;
-        padding: 2vw;
-        margin: 3vw;
-        font-size: 1em;
-
-
-    }
-
-    .stylingeventListview h1 {
-        color: black;
+    .projektListview h1 {
+        font-weight: 100;
         font-size: 2em;
+        text-align: center;
+        font-family: 'Heebo', sans-serif;
+        margin-top: 8vw;
 
     }
-}
 
-@media screen and (min-width:1300px) {
-    .description {
-        padding-left: 16em;
-        padding-right: 16em;
-        font-size: 1.2em;
+    .column1 img {
+        max-width: 600px;
+        display: block;
+        margin: auto;
+
     }
-}
+
+    .videoListview iframe {
+        width: 70%;
+    }
+
+    @media screen and (min-width:780px) {
+
+
+        .videoListview p {
+            text-align: center;
+            margin-top: 10vw;
+            margin-bottom: 7vw;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 100;
+            font-size: 1.1em;
+        }
+
+        .projektListview p {
+            font-size: 0.95em;
+            background-color: #B07762;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 100;
+            padding-left: 2vw;
+            padding-right: 1vw;
+
+        }
+
+        .projektListview h1 {
+            font-weight: 100;
+            font-size: 2.2em;
+            text-align: center;
+            font-family: 'Heebo', sans-serif;
+            margin-top: 9vw;
+
+        }
+
+        .projektListview img {
+            max-width: 450px;
+            margin-top: -6vw;
+
+
+        }
+
+        .stylingeventListview {
+            text-align: left;
+            font-size: 0.9em;
+            text-align: left;
+            padding: 10vw;
+
+
+        }
+
+    }
+
+    @media screen and (min-width:920px) {
+
+        .videoListview iframe {
+            width: 60%;
+        }
+    }
+
+    @media screen and (min-width:1100px) {
+
+
+        .stylingeventListview {
+            text-align: left;
+            padding: 2vw;
+            margin: 3vw;
+            font-size: 1em;
+
+
+        }
+
+        .stylingeventListview h1 {
+            color: black;
+            font-size: 2em;
+
+        }
+
+        .videoListview iframe {
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width:1300px) {
+
+        .videoListview iframe {
+            width: 40%;
+            margin-top: -2vw;
+        }
+
+        .stylingeventListview {
+            text-align: left;
+            padding: 15vw;
+            margin: 3vw;
+            font-size: 1.3em;
+            margin-top: -5vw;
+
+
+        }
+
+        .stylingeventListview h1 {
+            color: black;
+            font-size: 2em;
+
+        }
+
+        .projektListview p {
+            font-size: 1.2em;
+            background-color: #B07762;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 100;
+            padding-left: 2vw;
+            padding-right: 1vw;
+
+        }
+
+        .projektListview h1 {
+            font-weight: 100;
+            font-size: 2.2em;
+            text-align: center;
+            font-family: 'Heebo', sans-serif;
+
+
+        }
+
+        .projektListview img {
+            max-width: 650px;
+
+
+        }
+
+        .videoListview p {
+
+            font-size: 1.3em;
+            margin-bottom: 10vw;
+        }
+    }

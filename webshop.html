@@ -4,36 +4,35 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Style Editor Webshop</title>
+    <title>Style Editor Webshop</title>
 
     <link rel="stylesheet" href="CSS/webshop.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
 
 
     <style>
-
-        .row{
+        .row {
             display: block;
         }
 
-    h1{
+        h1 {
             font-family: 'Heebo', sans-serif;
-          font-weight: 300;
-          color: rgba(0, 0, 0, 0.56);
-          text-decoration: none;
-        font-size: 1.3em;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.56);
+            text-decoration: none;
+            font-size: 1.3em;
 
         }
 
-    p{
-        font-family: 'Heebo', sans-serif;
-        font-weight: 300;
-        color: rgba(0, 0, 0, 0.56);
-        text-decoration: none;
-        font-size: 0.8em;
+        p {
+            font-family: 'Heebo', sans-serif;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.56);
+            text-decoration: none;
+            font-size: 0.8em;
         }
 
-    hr{
+        hr {
             background-color: #0B584D;
             padding: 1px;
 
@@ -45,69 +44,103 @@
         }
 
 
-    .image{
+        .image {
 
-              width: 90%;
-              margin-top: 15px;
+            width: 90%;
+            margin-top: 15px;
             margin-left: 10px;
 
-          }
+        }
 
 
-/*   NAVIGATION*/
+        #modal {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background-color: white;
+            text-align: center;
+            /** skjuler den **/
+            transition: 1.1s;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 99;
 
 
-    .column1 {
-    float: left;
-    margin-right: 5px;
-    font-size: 1em;
+        }
+
+        #modal_content {
+            width: 95vw;
+            height: 85vh;
+            background-color: rgba(144, 166, 129, 0.19);
+            margin: auto;
+
+
+        }
+
+        #modal.vis {
+
+            opacity: 1;
+            pointer-events: all;
+            top: 0;
+
+
+        }
+
+
+        /*   NAVIGATION*/
+
+
+        .column1 {
+            float: left;
+            margin-right: 5px;
+            font-size: 1em;
 
 
 
-}
+        }
 
 
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-    #sorteringsknapper{
+        #sorteringsknapper {
             background-color: #E6C9C7;
             height: 700px;
             width: 170px;
 
         }
 
-    .menu_item{
+        .menu_item {
 
-        font-family: 'Heebo', sans-serif;
-        font-weight: 300;
-        color: rgba(0, 0, 0, 0.56);
-        background-color: #E6C9C7;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.56);
+            background-color: #E6C9C7;
 
-        font-size: 1.2em;
+            font-size: 1.2em;
             border: none;
             display: block;
             margin-bottom: 0.4em;
 
         }
 
-    .menu_item:hover{
+        .menu_item:hover {
             text-decoration: underline;
         }
 
 
-    /* PRODUKTER*/
+        /* PRODUKTER*/
 
-    .vare_container{
+        .vare_container {
             font-family: 'Heebo', sans-serif;
             display: inline-table;
 
         }
 
-    .column {
+        .column {
             float: left;
             width: 50%;
             margin-top: -9px;
@@ -119,32 +152,32 @@
 
 
 
-}
+        }
 
-    .pris{
+        .pris {
 
-          font-weight: 300;
-          color: rgba(0, 0, 0, 0.56);
-          text-decoration: none;
-        font-size: 1.2em;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.56);
+            text-decoration: none;
+            font-size: 1.2em;
             text-align: center;
         }
 
-    .kob{
+        .kob {
             text-decoration: none;
         }
 
-    .kobet{
-        font-family: 'Heebo', sans-serif;
-        font-weight: 300;
-        font-size: 1.2em;
-        text-decoration: none;
+        .kobet {
+            font-family: 'Heebo', sans-serif;
+            font-weight: 300;
+            font-size: 1.2em;
+            text-decoration: none;
 
-         margin: 0 auto;
+            margin: 0 auto;
 
             background-color: white;
-        color: rgba(0, 0, 0, 0.56);
-          border: 1px solid rgba(0, 0, 0, 0.56) ;
+            color: rgba(0, 0, 0, 0.56);
+            border: 1px solid rgba(0, 0, 0, 0.56);
 
 
 
@@ -152,45 +185,40 @@
             margin-bottom: 0.4em;
         }
 
-    .title{
-        text-align: center;
-        font-family: 'Heebo', sans-serif;
-        font-weight: 600;
+        .title {
+            text-align: center;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 600;
 
 
-        color: black;
-        text-decoration: none;
-        font-size: 0.8em;
+            color: black;
+            text-decoration: none;
+            font-size: 0.8em;
         }
 
 
 
 
-    @media screen and (min-width:563px){
-           .column1{
-                    margin-right: 5px;
+        @media screen and (min-width:563px) {
+            .column1 {
+                margin-right: 5px;
             }
 
-            #sorteringsknapper{
+            #sorteringsknapper {
 
-            height: 700px;
-            width: 250px;
-            font-size: 1.3em;
+                height: 700px;
+                width: 250px;
+                font-size: 1.3em;
 
-        }
-
-
-               hr{
+            }
 
 
+            hr {}
+
+            .column {
 
 
-
-        }
-             .column{
-
-
-            width: 50%;
+                width: 50%;
 
 
             }
@@ -206,31 +234,26 @@
 
 
 
-     @media screen and (min-width:692px){
-           .column1{
-                    margin-right: 25px;
+        @media screen and (min-width:692px) {
+            .column1 {
+                margin-right: 25px;
             }
 
-            #sorteringsknapper{
+            #sorteringsknapper {
 
-            height: 700px;
-            width: 250px;
-            font-size: 1.3em;
+                height: 700px;
+                width: 250px;
+                font-size: 1.3em;
 
-        }
-
-
-               hr{
+            }
 
 
+            hr {}
 
+            .column {
+                column-count: 1;
 
-
-        }
-             .column{
-                 column-count: 1;
-
-            width: 50%;
+                width: 50%;
 
 
             }
@@ -245,80 +268,63 @@
 
 
 
-        @media screen and (min-width:728px){
+        @media screen and (min-width:728px) {
 
 
-            .column1{
-                         margin-right: 50px;
+            .column1 {
+                margin-right: 50px;
             }
 
-            .column{
-                 column-count: 2;
+            .column {
+                column-count: 2;
 
-            width: 50%;
-
-
-            }
-
-
-                hr{
-
-
-
-
-        }
-
-                #sorteringsknapper{
-
-            height: 700px;
-            width: 250px;
-
-        }
-        }
-
-
-
-
-        @media screen and (min-width:1000px){
-
-
-            .column1{
-                         margin-right: 25px;
+                width: 50%;
 
 
             }
 
 
-            .column{
-                 column-count: 2;
+            hr {}
 
-            width: 70%;
+            #sorteringsknapper {
+
+                height: 700px;
+                width: 250px;
+
+            }
+        }
+
+
+
+
+        @media screen and (min-width:1000px) {
+
+
+            .column1 {
+                margin-right: 25px;
 
 
             }
 
 
-                hr{
+            .column {
+                column-count: 2;
+
+                width: 70%;
 
 
+            }
 
+
+            hr {}
+
+            #sorteringsknapper {
+
+                height: 700px;
+                width: 250px;
+
+            }
         }
-
-           #sorteringsknapper{
-
-            height: 700px;
-            width: 250px;
-
-        }
-        }
-
-
-
-
-
-
-
-
     </style>
 
 
@@ -330,7 +336,7 @@
 
     <main>
 
-<!--       Section til indhold af modale vinduet, når man trykker på en vare-->
+        <!--       Section til indhold af modale vinduet, når man trykker på en vare-->
 
 
         <section id="modal">
@@ -348,50 +354,50 @@
         </section>
 
 
-<!--    section til sorteringsklapperne-->
-<div class="row">
+        <!--    section til sorteringsklapperne-->
+        <div class="row">
 
-       <div class="column1">
-        <section id="sorteringsknapper">
-            <h1>VÆLG KATAGORI</h1>
-            <div class="knapper">
-                <button class="menu_item" data_kategori="ALLE">Alle</button>
-                <button class="menu_item" data_kategori="VINTAGE GLAS">GLAS</button>
-                <button class="menu_item" data_kategori="TALLERKENER">TALLERKNER</button>
-                <button class="menu_item" data_kategori="RODEBUNKEN">RODEBUNKE</button>
+            <div class="column1">
+                <section id="sorteringsknapper">
+                    <h1>VÆLG KATAGORI</h1>
+                    <div class="knapper">
+                        <button class="menu_item" data_kategori="ALLE">Alle</button>
+                        <button class="menu_item" data_kategori="VINTAGE GLAS">GLAS</button>
+                        <button class="menu_item" data_kategori="TALLERKENER">TALLERKNER</button>
+                        <button class="menu_item" data_kategori="RODEBUNKEN">RODEBUNKE</button>
 
+
+                    </div>
+
+                    <hr width="15%">
+                    <br>
+                    <br>
+                    <p>Shoppen foregår over mail, det betyder at køb knappen henviser til Anettes Thyrsteds mail. Skriv til Anette hvis du gerne vil købe varen.</p>
+                </section>
 
             </div>
 
-             <hr width="15%">
-            <br>
-            <br>
-            <p>Shoppen foregår over mail, det betyder at køb knappen henviser til Anettes Thyrsteds mail. Skriv til Anette hvis du gerne vil købe varen.</p>
-        </section>
+            <!--        Template til vare container. Det er hver af varene der er pakket ind i en vare container-->
 
-</div>
-
-<!--        Template til vare container. Det er hver af varene der er pakket ind i en vare container-->
-
-          <div class="column">
+            <div class="column">
 
 
 
-        <section class="vare"></section>
-        <template class="vare_template">
-            <article class="vare_container">
-                <div class="genre"></div>
+                <section class="vare"></section>
+                <template class="vare_template">
+                    <article class="vare_container">
+                        <div class="genre"></div>
 
 
-                <img class="image" src="" alt="">
-                 <div class="title"></div>
+                        <img class="image" src="" alt="">
+                        <div class="title"></div>
 
 
-                <div class="pris"></div>
-                <a class="kob" href="" target="_blank"><button class="kobet">KØB</button></a>
-            </article>
-        </template>
-        </div>
+                        <div class="pris"></div>
+                        <a class="kob" href="" target="_blank"><button class="kobet">KØB</button></a>
+                    </article>
+                </template>
+            </div>
 
         </div>
     </main>
@@ -399,7 +405,6 @@
     <?php include "footer.html";?>
 
     <script>
-
         // der gør at HTML loades før json loades
         document.addEventListener("DOMContentLoaded", getJson);
 
@@ -465,24 +470,25 @@
 
                     let klon = vareTarget.cloneNode(true).content;
 
-    klon.querySelector(".pris").textContent = vare.acf.pris + " kr";
-    klon.querySelector(".kob").href = vare.acf.kob; klon.querySelector(".title").textContent = vare.title.rendered;
-    klon.querySelector(".image").src = vare.acf.image;
+                    klon.querySelector(".pris").textContent = vare.acf.pris + " kr";
+                    klon.querySelector(".kob").href = vare.acf.kob;
+                    klon.querySelector(".title").textContent = vare.title.rendered;
+                    klon.querySelector(".image").src = vare.acf.image;
 
 
 
 
-//når man klikker på følgende elementer går man videre til modal
-    klon.querySelector(".image").addEventListener("click", () => {
-    visModal(varen);
+                    //når man klikker på følgende elementer går man videre til modal
+                    klon.querySelector(".image").addEventListener("click", () => {
+                        visModal(vare);
                     })
 
-    vareOutPut.appendChild(klon);
+                    vareOutPut.appendChild(klon);
                 }
-          })
+            })
         }
 
-      //  modal vindue function
+        //  modal vindue function
         function visModal(varen) {
 
             console.log("visModal");
@@ -501,7 +507,7 @@
 
             modal.querySelector(".kob").href = varen.acf.kob;
 
-    modal.querySelector(".modal_close").addEventListener("click", skjulModal);
+            modal.querySelector(".modal_close").addEventListener("click", skjulModal);
         }
 
 
