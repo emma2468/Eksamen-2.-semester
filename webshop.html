@@ -12,6 +12,10 @@
 
     <style>
 
+        .row{
+            display: block;
+        }
+
         h1{
             font-family: 'Heebo', sans-serif;
           font-weight: 300;
@@ -32,7 +36,7 @@
     hr{
             background-color: #0B584D;
             padding: 1px;
-            width: 30%;
+            width: 27%;
             position: absolute;
 
             margin-top: 20px;
@@ -56,8 +60,8 @@
 
     .column1 {
     float: left;
-    width: 50%;
-    margin-bottom: 50px;
+         margin-right: 5px;
+
     font-size: 1.3em;
 
 
@@ -74,7 +78,7 @@
     #sorteringsknapper{
             background-color: #E6C9C7;
             height: 700px;
-            width: 200px;
+            width: 170px;
 
         }
 
@@ -110,9 +114,13 @@
             .column {
             float: left;
             width: 50%;
-            margin-bottom: 50px;
+            margin-top: -9px;
             font-size: 1.3em;
-            margin-top: 20px;
+            margin-left: 10px;
+
+
+
+
 
 
 }
@@ -163,6 +171,154 @@
 
 
 
+
+         @media screen and (min-width:563px){
+           .column1{
+                    margin-right: 5px;
+            }
+
+            #sorteringsknapper{
+
+            height: 700px;
+            width: 250px;
+            font-size: 1em;
+
+        }
+
+
+               hr{
+
+            width: 35%;
+
+
+
+        }
+             .column{
+                 column-count: 1;
+
+            width: 50%;
+
+
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+         @media screen and (min-width:692px){
+           .column1{
+                    margin-right: 25px;
+            }
+
+            #sorteringsknapper{
+
+            height: 700px;
+            width: 250px;
+            font-size: 1em;
+
+        }
+
+
+               hr{
+
+            width: 35%;
+
+
+
+        }
+             .column{
+                 column-count: 1;
+
+            width: 50%;
+
+
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+        @media screen and (min-width:728px){
+
+
+            .column1{
+                         margin-right: 50
+                             px;
+            }
+
+            .column{
+                 column-count: 2;
+
+            width: 60%;
+
+
+            }
+
+
+                hr{
+
+            width: 20%;
+
+
+        }
+
+                #sorteringsknapper{
+
+            height: 700px;
+            width: 250px;
+
+        }
+        }
+
+
+
+
+        @media screen and (min-width:1200px){
+
+
+            .column1{
+                         margin-right: 25px;
+
+
+            }
+
+
+            .column{
+                 column-count: 2;
+
+            width: 70%;
+
+
+            }
+
+
+                hr{
+
+            width: 23%;
+
+
+        }
+
+           #sorteringsknapper{
+
+            height: 700px;
+            width: 400px;
+
+        }
+        }
 
 
 
