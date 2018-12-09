@@ -1,5 +1,6 @@
-.singleContainer{
+.eventContainer{
     background-color: #65b0ba;
+    padding-bottom: 2em;
 }
 
 .data-navn{
@@ -8,7 +9,6 @@
     text-align: center;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    padding-top: 1.5em;
     font-size: 1.6em;
     color: #005860;
 }
@@ -23,6 +23,20 @@
 
 .data-billede{
     width: 100%;
+}
+
+.tilbage{
+    border: 1px solid white;
+    font-family: 'heebo', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-left: 2em;
+    margin-top: 1em;
+    background-color: #65b0ba;
+    color: white;
 }
 
 /*----------------slideshow---------------------*/
@@ -57,20 +71,16 @@ img {vertical-align: middle;}
 }
 
 .mySlides{
-
     grid-area: b;
 }
 
 
 .prev{
-        grid-area: p;
-
+    grid-area: p;
 }
 
 .next{
-
-        grid-area: b;
-
+    grid-area: b;
 }
 /* Next & previous buttons */
 .prev, .next {

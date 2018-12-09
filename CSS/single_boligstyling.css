@@ -1,6 +1,7 @@
 
 .eventContainer{
-    background-color: #e8b931
+    background-color: #e8b931;
+    padding-bottom: 2em;
 }
 
 .data-navn{
@@ -22,6 +23,20 @@
     padding-bottom: 1.5em;
 }
 
+.tilbage{
+    border: 1px solid white;
+    font-family: 'heebo', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-left: 2em;
+    margin-top: 1em;
+    background-color: #e8b931;
+    color: white;
+}
+
 /*----------------slideshow---------------------*/
 
 img{
@@ -40,7 +55,6 @@ img {vertical-align: middle;}
 }
 
 .billeder_container{
-
     height: 450px;
     padding: 5px;
 
@@ -51,6 +65,7 @@ img {vertical-align: middle;}
         ". . ."
         ". b ."
         ". . ."
+
 }
 
 .mySlides{
