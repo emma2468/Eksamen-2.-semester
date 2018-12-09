@@ -92,7 +92,6 @@ nav.show {
 .dropdown-content {
     display: none;
 
-
 }
 
 .dropdown-content a {
@@ -143,16 +142,15 @@ display: none;
 .dropdown {
     float: inherit;
     overflow: inherit;
-
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
     z-index: 1;
+    float:inherit;
 }
 
 .dropdown-content a {
@@ -161,7 +159,9 @@ display: none;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    font-family: 'heebo', sans-serif;
+    font-weight: 100;
 }
 
 .dropdown-content a:hover {
@@ -177,7 +177,7 @@ display: none;
 
 
        <div class="burgermenu">
-        <img class="nav_burger_logo" src="img/logo_styleeditor.svg" alt="nav_logo">
+        <a href="index.html"><img class="nav_burger_logo" src="img/logo_styleeditor.svg" alt="nav_logo"></a>
         <button class="burger">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -196,23 +196,23 @@ display: none;
      </li>
 
               <div class="dropdown-content">
-                <a href="#">Event Styling</a>
-                <a href="#">Møbel indretning</a>
+                <a href="eventstyling.html">Event Styling</a>
+                <a href="boligstyling.html">Bolig Styling</a>
                   </div>
                 </div>
 
-                  <a href="#">
-                    <li>PRODUCTS</li>
+                  <a href="webshop.html">
+                    <li>SHOP</li>
 
                 </a>
 
-                <img class="nav_logo" src="img/logo_styleeditor.svg" alt="nav_logo">
+                <a href="index.html"><img class="nav_logo" src="img/logo_styleeditor.svg" alt="nav_logo"></a>
 
-                <a href="">
-                    <li>THE STYLIST</li>
+                <a href="om.html">
+                    <li>OM STYLE EDITOR</li>
                 </a>
-                <a href="#">
-                    <li>CONTACT</li>
+                <a href="kontakt.html">
+                    <li>KONTAKT</li>
                 </a>
             </ul>
         </nav>
