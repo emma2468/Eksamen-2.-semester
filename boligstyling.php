@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <?php include "header.html";?>
    <main>
 
        <section class="styling_events" data-container></section>
@@ -28,6 +29,8 @@
        </template>
 
    </main>
+
+    <?php include "footer.html";?>
 
     <script>
         document.addEventListener("DOMContentLoaded", getJson);
