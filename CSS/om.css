@@ -20,10 +20,12 @@
 
       h2{
           color: #0B584D;
+          font-weight: 100;
       }
 
       p{
           color: white;
+          font-weight: 300;
       }
 
 
