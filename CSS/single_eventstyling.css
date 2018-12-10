@@ -56,6 +56,7 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
+/*
 .billeder_container{
 
     height: 450px;
@@ -68,7 +69,9 @@ img {vertical-align: middle;}
         ". b ."
         ". . ."
 }
+*/
 
+/*
 .mySlides{
     grid-area: b;
 }
@@ -81,6 +84,7 @@ img {vertical-align: middle;}
 .next{
     grid-area: b;
 }
+*/
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
