@@ -55,9 +55,7 @@ img {vertical-align: middle;}
 }
 
 .billeder_container{
-    height: 450px;
-    padding: 5px;
-
+    height: 400px;
     display: grid;
     grid-template-columns: 1fr 95% 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -126,7 +124,7 @@ img {vertical-align: middle;}
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 20px 20px;
   position: absolute;
   top: 0;
 }
