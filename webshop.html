@@ -10,327 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
 
 
-    <style>
-        .row {
-            display: block;
-        }
-
-        h1 {
-            font-family: 'Heebo', sans-serif;
-            font-weight: 300;
-            color: rgba(0, 0, 0, 0.56);
-            text-decoration: none;
-            font-size: 1.3em;
-
-        }
-
-        p {
-            font-family: 'Heebo', sans-serif;
-            font-weight: 300;
-            color: rgba(0, 0, 0, 0.56);
-            text-decoration: none;
-            font-size: 0.8em;
-        }
-
-        hr {
-            background-color: #0B584D;
-            padding: 1px;
-
-            position: absolute;
-
-            margin-top: 20px;
-
-
-        }
-
-
-        .image {
-
-            width: 90%;
-            margin-top: 15px;
-            margin-left: 10px;
-
-        }
-
-
-        #modal {
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            background-color: white;
-            text-align: center;
-            /** skjuler den **/
-            transition: 1.1s;
-            opacity: 0;
-            pointer-events: none;
-            z-index: 99;
-
-
-        }
-
-        #modal_content {
-            width: 95vw;
-            height: 85vh;
-            background-color: rgba(144, 166, 129, 0.19);
-            margin: auto;
-
-
-        }
-
-        #modal.vis {
-
-            opacity: 1;
-            pointer-events: all;
-            top: 0;
-
-
-        }
-
-        #modal.close{
-            border: none;
-        }
-
-
-        /*   NAVIGATION*/
-
-
-        .column1 {
-            float: left;
-            margin-right: 5px;
-            font-size: 1em;
-
-
-
-        }
-
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        #sorteringsknapper {
-            background-color: #E6C9C7;
-            height: 700px;
-            width: 170px;
-
-        }
-
-        .menu_item {
-
-            font-family: 'Heebo', sans-serif;
-            font-weight: 300;
-            color: rgba(0, 0, 0, 0.56);
-            background-color: #E6C9C7;
-
-            font-size: 1.2em;
-            border: none;
-            display: block;
-            margin-bottom: 0.4em;
-
-        }
-
-        .menu_item:hover {
-            text-decoration: underline;
-        }
-
-
-        /* PRODUKTER*/
-
-        .vare_container {
-            font-family: 'Heebo', sans-serif;
-            display: inline-table;
-
-        }
-
-        .column {
-            float: left;
-            width: 50%;
-            margin-top: -9px;
-            font-size: 1.3em;
-            margin-left: 10px;
-
-
-
-
-
-
-        }
-
-        .pris {
-
-            font-weight: 300;
-            color: rgba(0, 0, 0, 0.56);
-            text-decoration: none;
-            font-size: 1.2em;
-            text-align: center;
-        }
-
-        .kob {
-            text-decoration: none;
-        }
-
-        .kobet {
-            font-family: 'Heebo', sans-serif;
-            font-weight: 300;
-            font-size: 1.2em;
-            text-decoration: none;
-
-            margin: 0 auto;
-
-            background-color: white;
-            color: rgba(0, 0, 0, 0.56);
-            border: 1px solid rgba(0, 0, 0, 0.56);
-
-
-
-            display: block;
-            margin-bottom: 0.4em;
-        }
-
-        .title {
-            text-align: center;
-            font-family: 'Heebo', sans-serif;
-            font-weight: 600;
-
-
-            color: black;
-            text-decoration: none;
-            font-size: 0.8em;
-        }
-
-
-
-
-        @media screen and (min-width:563px) {
-            .column1 {
-                margin-right: 5px;
-            }
-
-            #sorteringsknapper {
-
-                height: 700px;
-                width: 250px;
-                font-size: 1.3em;
-
-            }
-
-
-            hr {}
-
-            .column {
-
-
-                width: 50%;
-
-
-            }
-
-
-
-
-
-        }
-
-
-
-
-
-
-        @media screen and (min-width:692px) {
-            .column1 {
-                margin-right: 25px;
-            }
-
-            #sorteringsknapper {
-
-                height: 700px;
-                width: 250px;
-                font-size: 1.3em;
-
-            }
-
-
-            hr {}
-
-            .column {
-                column-count: 1;
-
-                width: 50%;
-
-
-            }
-
-
-
-
-
-        }
-
-
-
-
-
-        @media screen and (min-width:728px) {
-
-
-            .column1 {
-                margin-right: 50px;
-            }
-
-            .column {
-                column-count: 2;
-
-                width: 50%;
-
-
-            }
-
-
-            hr {}
-
-            #sorteringsknapper {
-
-                height: 700px;
-                width: 250px;
-
-            }
-        }
-
-
-
-
-        @media screen and (min-width:1000px) {
-
-
-            .column1 {
-                margin-right: 25px;
-
-
-            }
-
-
-            .column {
-                column-count: 2;
-
-                width: 70%;
-
-
-            }
-
-
-            hr {}
-
-            #sorteringsknapper {
-
-                height: 700px;
-                width: 250px;
-
-            }
-        }
-    </style>
-
 
 </head>
 
@@ -351,16 +30,17 @@
                 <div class="modal_langbeskrivelse"></div>
                 <img class="modal_image" src="" alt="">
                 <div class="modal_pris"></div>
-                <div class="modal_kob"></div>
+                <a class="kob" href="" target="_blank"><button class="kobet">KØB</button></a>
 
 
             </div>
         </section>
 
 
-        <!--    section til sorteringsklapperne-->
-        <div class="row">
+        <!--    section til site nav-->
 
+        <div class="row">
+                 <!--    sorteringsknapper/navigationen blandt vare-->
             <div class="column1">
                 <section id="sorteringsknapper">
                     <h1>VÆLG KATAGORI</h1>
@@ -404,6 +84,9 @@
             </div>
 
         </div>
+
+
+
     </main>
 
     <?php include "footer.html";?>
@@ -509,7 +192,7 @@
 
             modal.querySelector(".modal_pris").textContent = varen.acf.pris + " Kr.";
 
-            modal.querySelector(".kob").href = varen.acf.kob;
+
 
             modal.querySelector(".modal_close").addEventListener("click", skjulModal);
         }
