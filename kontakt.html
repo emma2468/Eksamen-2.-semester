@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Style Editor Kontakt</title>
 
@@ -9,15 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
 
 
-  </head>
+</head>
 
 
 
 
-  <body>
+<body>
+
+    <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
 
     <section id="Kontakt_information">
-           <h1>Kontakt</h1>
+        <h1>Kontakt</h1>
         <h4>Style Editor | Anette Thyrsted</h4>
         <h4>Telefon | 31 77 32 32</h4>
         <h4>Email | <a href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_top">anette@styleeditor.dk</a></h4>
@@ -27,29 +29,49 @@
     <section id="under_information">
 
 
-       <div class="row">
+        <div class="row">
 
 
-        <div class="column">
-            <h1>Adminstration</h1>
-            <h4>Adresse | Kildedalen 1, 2900 Hellerup</h4>
+            <div class="column">
+                <h1>Adminstration</h1>
+                <h4>Adresse | Kildedalen 1, 2900 Hellerup</h4>
 
 
-        </div>
+            </div>
 
-        <div class="column">
-        <h2>Style Editor Kontor</h2>
-            <h4>Adresse | Rentemestervej 39, 2400 København</h4>
-        </div>
+            <div class="column">
+                <h2>Style Editor Kontor</h2>
+                <h4>Adresse | Rentemestervej 39, 2400 København</h4>
+            </div>
 
 
-      <h5>PAKKER SKAL LEVERS HOS ADMINSTRATION</h5>
+            <h5>PAKKER SKAL LEVERS HOS ADMINSTRATION</h5>
 
         </div>
 
     </section>
 
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
-  </body>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("button").style.display = "block";
+            } else {
+                document.getElementById("button").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+
+</body>
 
 </html>
