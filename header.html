@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+
+
 <style>
 header {
     display: grid;
@@ -29,6 +32,8 @@ ul {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
+
+
 
 .nav_logo {
     width: 250px;
@@ -86,14 +91,9 @@ nav.show {
     transform: rotate(45deg) translate(-4px, -8px);
 }
 
-.dropdown-content {
-    display: none;
-
-}
-
-.dropdown-content a {
-display: none;
-}
+    .dropdown{
+        display: none;
+    }
 
 
 
@@ -108,18 +108,14 @@ display: none;
         display: grid;
         grid-template-columns: repeat (6, 1fr);
     }
-
-
     .nav_logo {
 
         display: block;
         justify-self: center;
     }
-
     .burgermenu {
         display: none;
     }
-
     ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -133,19 +129,16 @@ display: none;
     li:hover{
         color: darkgray;
     }
-
-
-
 .dropdown {
-    float: inherit;
+    float:inherit;
     overflow: inherit;
 }
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position:sticky;
     background-color: #f9f9f9;
-    min-width: 200px;
+    min-width: 100px;
     z-index: 1;
     float:inherit;
 }
@@ -153,7 +146,7 @@ display: none;
 .dropdown-content a {
     float: none;
     color: black;
-    padding: 12px 16px;
+    padding: 22px 16px;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -161,7 +154,8 @@ display: none;
     font-weight: 100;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover
+    {
     background-color: #ddd;
 }
 
@@ -169,7 +163,7 @@ display: none;
     display: block;
 
 }
-
+    }
 </style>
 
 
@@ -188,22 +182,29 @@ display: none;
             <ul>
 
 
-            <div class="dropdown">
-            <li>PORTFOLIO <i class="fa fa-caret-down"></i></li>
+                    <div class="dropdown">
+     <li>PORTFOLIO <i class="fa fa-caret-down"></i>
+     </li>
 
-             <div class="dropdown-content">
-                <a href="eventstyling.php">Event Styling</a>
-                <a href="boligstyling.php">Bolig Styling</a>
+              <div class="dropdown-content">
+                <a href="eventstyling.php">  Event Styling</a>
+                <a href="boligstyling.php"> Bolig Styling</a>
                   </div>
-            </div>
+                </div>
 
-            <a href="webshop.php"><li>SHOP</li></a>
+                  <a href="webshop.php">
+                    <li>SHOP</li>
 
-            <a href="index.php"><img class="nav_logo" src="img/logo_styleeditor.svg" alt="nav_logo"></a>
+                </a>
 
-            <a href="om.php"><li>OM STYLE EDITOR</li></a>
-            <a href="kontakt.php"><li>KONTAKT</li></a>
+                <a href="index.html"><img class="nav_logo" src="img/logo_styleeditor.svg" alt="nav_logo"></a>
 
+                <a href="om.php">
+                    <li>OM STYLE EDITOR</li>
+                </a>
+                <a href="kontakt.php">
+                    <li>KONTAKT</li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -225,4 +226,5 @@ function onLoad() {
 document.addEventListener("DOMContentLoaded", function (event) {
     onLoad();
 });
+
 </script>
