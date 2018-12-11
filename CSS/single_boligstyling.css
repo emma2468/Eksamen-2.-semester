@@ -4,6 +4,27 @@
     padding-bottom: 2em;
 }
 
+@media screen and (min-width:640px){
+    .eventContainer{
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .eventContainer{
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .eventContainer{
+        margin-left: 15em;
+        margin-right: 15em;
+    }
+}
+
 .data-navn{
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
@@ -51,41 +72,28 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto;
 }
 
-/*
-.billeder_container{
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 95% 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        ". . ."
-        ". b ."
-        ". . ."
-
-}
-*/
-
-/*
-.mySlides{
-
-    grid-area: b;
+@media screen and (min-width:640px){
+    .slideshow-container{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
 }
 
-
-.prev{
-        grid-area: p;
-
+@media screen and (min-width:1000px){
+    .slideshow-container{
+        margin-left: 6em;
+        margin-right: 6em;
+    }
 }
 
-.next{
-
-        grid-area: b;
-
+@media screen and (min-width:1200px){
+    .eventContainer{
+        margin-left: 15em;
+        margin-right: 15em;
+    }
 }
-*/
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
