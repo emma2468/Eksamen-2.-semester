@@ -380,7 +380,10 @@ body {
     }
 }
 
-
+#santa_container{
+    position:absolute;
+    top: auto;
+}
 
 #santa_sprite{
     background-image: url(../nisse-01.svg);
