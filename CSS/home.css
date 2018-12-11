@@ -105,6 +105,8 @@ body {
     padding-top: 6vw;
 }
 
+
+
 @media screen and (min-width:767px) {
     .row1 {
         display: grid;
@@ -231,231 +233,237 @@ body {
 @media screen and (min-width:780px) {
 
 
-        .videoListview p {
-            text-align: center;
-            margin-top: 10vw;
-            margin-bottom: 7vw;
-            font-family: 'Heebo', sans-serif;
-            font-weight: 100;
-            font-size: 1.1em;
-        }
+    .videoListview p {
+        text-align: center;
+        margin-top: 10vw;
+        margin-bottom: 7vw;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 100;
+        font-size: 1.1em;
+    }
 
-        .projektListview p {
-            font-size: 0.95em;
-            background-color: #B07762;
-            font-family: 'Heebo', sans-serif;
-            font-weight: 100;
-            padding-left: 2vw;
-            padding-right: 1vw;
-
-        }
-
-        .projektListview h1 {
-            font-weight: 100;
-            font-size: 2.2em;
-            text-align: center;
-            font-family: 'Heebo', sans-serif;
-            margin-top: 9vw;
-
-        }
-
-        .projektListview img {
-            max-width: 450px;
-            margin-top: -6vw;
-
-
-        }
-
-        .stylingeventListview {
-            text-align: left;
-            font-size: 0.9em;
-            text-align: left;
-            padding: 10vw;
-
-
-        }
+    .projektListview p {
+        font-size: 0.95em;
+        background-color: #B07762;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 100;
+        padding-left: 2vw;
+        padding-right: 1vw;
 
     }
+
+    .projektListview h1 {
+        font-weight: 100;
+        font-size: 2.2em;
+        text-align: center;
+        font-family: 'Heebo', sans-serif;
+        margin-top: 9vw;
+
+    }
+
+    .projektListview img {
+        max-width: 450px;
+        margin-top: -6vw;
+
+
+    }
+
+    .stylingeventListview {
+        text-align: left;
+        font-size: 0.9em;
+        text-align: left;
+        padding: 10vw;
+
+
+    }
+
+}
 
 @media screen and (min-width:920px) {
 
-        .videoListview iframe {
-            width: 60%;
-        }
+    .videoListview iframe {
+        width: 60%;
     }
+}
 
 @media screen and (min-width:1100px) {
 
 
-        .stylingeventListview {
-            text-align: left;
-            padding: 2vw;
-            margin: 3vw;
-            font-size: 1em;
+    .stylingeventListview {
+        text-align: left;
+        padding: 2vw;
+        margin: 3vw;
+        font-size: 1em;
 
 
-        }
-
-        .stylingeventListview h1 {
-            color: black;
-            font-size: 2em;
-
-        }
-
-        .videoListview iframe {
-            width: 50%;
-        }
     }
 
-@media screen and (min-width:1300px) {
+    .stylingeventListview h1 {
+        color: black;
+        font-size: 2em;
 
-        .videoListview iframe {
-            width: 40%;
-            margin-top: -2vw;
-        }
-
-        .stylingeventListview {
-            text-align: left;
-            padding: 15vw;
-            margin: 3vw;
-            font-size: 1.3em;
-            margin-top: -5vw;
-
-
-        }
-
-        .stylingeventListview h1 {
-            color: black;
-            font-size: 2em;
-
-        }
-
-        .projektListview p {
-            font-size: 1.2em;
-            background-color: #B07762;
-            font-family: 'Heebo', sans-serif;
-            font-weight: 100;
-            padding-left: 2vw;
-            padding-right: 1vw;
-
-        }
-
-        .projektListview h1 {
-            font-weight: 100;
-            font-size: 2.2em;
-            text-align: center;
-            font-family: 'Heebo', sans-serif;
-
-
-        }
-
-        .projektListview img {
-            max-width: 650px;
-
-
-        }
-
-        .videoListview p {
-
-            font-size: 1.3em;
-            margin-bottom: 10vw;
-        }
     }
 
-
-
-
-
-
-
-
-
-
-
-  /*  INTERAKTIV SVG*/
-@media only screen and (max-width:793px) {
-
-  #santa_container{
-    display: none;
+    .videoListview iframe {
+        width: 50%;
     }
 }
 
-#santa_container{
-    position:absolute;
+@media screen and (min-width:1300px) {
+
+    .videoListview iframe {
+        width: 40%;
+        margin-top: -2vw;
+    }
+
+    .stylingeventListview {
+        text-align: left;
+        padding: 15vw;
+        margin: 3vw;
+        font-size: 1.3em;
+        margin-top: -5vw;
+
+
+    }
+
+    .stylingeventListview h1 {
+        color: black;
+        font-size: 2em;
+
+    }
+
+    .projektListview p {
+        font-size: 1.2em;
+        background-color: #B07762;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 100;
+        padding-left: 2vw;
+        padding-right: 1vw;
+
+    }
+
+    .projektListview h1 {
+        font-weight: 100;
+        font-size: 2.2em;
+        text-align: center;
+        font-family: 'Heebo', sans-serif;
+
+
+    }
+
+    .projektListview img {
+        max-width: 650px;
+
+
+    }
+
+    .videoListview p {
+
+        font-size: 1.3em;
+        margin-bottom: 10vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  INTERAKTIV SVG*/
+@media only screen and (max-width:793px) {
+
+    #santa_container {
+        display: none;
+    }
+}
+
+#santa_container {
+    position: absolute;
     top: auto;
     right: 40px;
 }
 
-#santa_sprite{
+#santa_sprite {
     background-image: url(../nisse-01.svg);
     background-size: 200% 100%;
 
     width: 15vw;
     height: 22vw;
 
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
--webkit-animation-timing-function: steps(2); /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: steps(2);
+    /* Safari 4.0 - 8.0 */
 
     animation-name: example;
 
-     animation-fill-mode:both;
+    animation-fill-mode: both;
 
 
-     animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 
 
 
 
-    }
+}
 
 @-webkit-keyframes example {
-  0% {background-position: 0 0;
+    0% {
+        background-position: 0 0;
     }
 
-  100% {background-position: 200% 0;
+    100% {
+        background-position: 200% 0;
 
 
-    }}
+    }
+}
 
 .tooltip {
-  position: relative;
-  display: inline-block;
-    }
+    position: relative;
+    display: inline-block;
+}
 
 
 .button:hover {
     cursor: pointer;
-  }
+}
 
 .tooltip .tooltiptext {
 
-font-family: 'Heebo', sans-serif;
-font-weight: 100;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
 
-  visibility: hidden;
-  width: 220px;
-  background-color: #6CB4BE;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
+    visibility: hidden;
+    width: 220px;
+    background-color: #6CB4BE;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
 
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: 90%;
-  left: -80%;
-  margin-left: 60px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 90%;
+    left: -80%;
+    margin-left: 60px;
 
-  /* Fade in tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -464,7 +472,7 @@ font-weight: 100;
 
 /*    --------til toppen knappen----------*/
 
-    #button {
+#button {
     display: none;
     position: fixed;
     bottom: 20px;

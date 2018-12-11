@@ -21,24 +21,24 @@
 
 <body>
 
-<!--    <?php include "header.html";?>-->
+    <!--    <?php include "header.html";?>-->
 
     <div class="slideshow">
 
 
         <div class="slide fade">
 
-            <img src="img/event-01.png" alt="">
+            <a href="eventstyling.html"> <img src="img/event-01.png" alt=""></a>
 
         </div>
         <div class="slide fade">
 
-            <img src="img/bolig-02.png" alt="">
+            <a href="boligstyling.html"><img src="img/bolig-02.png" alt=""></a>
 
         </div>
         <div class="slide fade">
 
-            <img src="img/shop-03.png" alt="">
+            <a href="webshop.html"> <img src="img/shop-03.png" alt=""></a>
 
         </div>
 
@@ -86,11 +86,12 @@
                         <h1 class="heading_events" data-title1></h1>
                         <p class="description" data-text></p>
 
-
                     </div>
 
 
                 </div>
+
+
 
             </article>
         </template>
@@ -102,34 +103,35 @@
         <template data-template2>
 
             <article class="videoListview">
-                     <!--INTERAKTIV SVG   -->
+                <!--INTERAKTIV SVG   -->
 
-                    <div id="santa_container">
+                <div id="santa_container">
 
-<div class="tooltip">
- <span class="tooltiptext">Har du husket alle julegaverne? - nej!  så tryk på mig og jeg vil hjælpe dig til at finde de sidste par gaver. </span>
-<a href="webshop.html">
-<div id="santa_sprite"></div>
-</a>
+                    <div class="tooltip">
+                        <span class="tooltiptext">Har du husket alle julegaverne? - nej! så tryk på mig og jeg vil hjælpe dig til at finde de sidste par gaver. </span>
+                        <a href="webshop.html">
+                            <div id="santa_sprite"></div>
+                        </a>
 
-</div>
-
-
-
-
-    </div>
+                    </div>
 
 
 
-                <p data-title2></p>
+
+                </div>
+
+
+
+                <p data-title2></p>her
                 <video data-video src="" type=""></video>
+
             </article>
         </template>
 
 
     </main>
 
-<!--
+    <!--
     <?php include "footer.html";?>
 
 -->
@@ -253,22 +255,22 @@
 
         //-----------til toppen knappen-----------
 
-window.onscroll = function() {scrollFunction()};
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("button").style.display = "block";
-    } else {
-        document.getElementById("button").style.display = "none";
-    }
-}
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("button").style.display = "block";
+            } else {
+                document.getElementById("button").style.display = "none";
+            }
+        }
 
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 
 </body>
