@@ -13,6 +13,8 @@
 
     <main class="eventContainer">
 
+        <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
+
         <section class="singleContainer">
             <article class="event">
                <a href="eventstyling.html"><button class="tilbage">TILBAGE</button></a>
@@ -120,14 +122,14 @@
             dest.querySelector(".data-navn").textContent = event.title.rendered;
             dest.querySelector(".data-langbeskrivelse").innerHTML = event.content.rendered;
 
-            dest.querySelector(".image1").src = home.acf.image1;
-            dest.querySelector(".image2").src = home.acf.image2;
-            dest.querySelector(".image3").src = home.acf.image3;
-            dest.querySelector(".image4").src = home.acf.image4;
-            dest.querySelector(".image5").src = home.acf.image5;
-            dest.querySelector(".image6").src = home.acf.image6;
-            dest.querySelector(".image7").src = home.acf.image7;
-            dest.querySelector(".image8").src = home.acf.image8;
+            dest.querySelector(".image1").src = event.acf.image1;
+            dest.querySelector(".image2").src = event.acf.image2;
+            dest.querySelector(".image3").src = event.acf.image3;
+            dest.querySelector(".image4").src = event.acf.image4;
+            dest.querySelector(".image5").src = event.acf.image5;
+            dest.querySelector(".image6").src = event.acf.image6;
+            dest.querySelector(".image7").src = event.acf.image7;
+            dest.querySelector(".image8").src = event.acf.image8;
 
 
         }
@@ -159,6 +161,23 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+        //---------til toppen knap----------
+
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("button").style.display = "block";
+    } else {
+        document.getElementById("button").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
     </script>
 
