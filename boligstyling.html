@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
   <?php include "header.html";?>
 
    <main>
@@ -89,6 +90,7 @@
                 let klon = eventTemplate.cloneNode(true).content;
                 klon.querySelector("[data-title1]").textContent = events.title.rendered;
                 klon.querySelector("img").src = events.acf.image;
+                klon.querySelector("img").alt = events.acf.image;
                 //single
                 klon.querySelector("img").addEventListener("click", ()=>{
                     window.location.href = "single_boligstyling.html?id=" + events.id;

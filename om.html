@@ -22,6 +22,7 @@
 
 
 <body>
+    <?php include "header.html";?>
 
     <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
 
@@ -40,7 +41,14 @@
         </article>
     </template>
 
-    <script>
+
+
+</body>
+
+
+    <?php include "footer.html";?>
+
+  <script>
         document.addEventListener("DOMContentLoaded", getJSON);
 
         let om;
@@ -61,6 +69,7 @@
             om.forEach(om => {
                     let klon = omTemplate.cloneNode(true).content;
                     klon.querySelector(".image").src = om.acf.image;
+                    klon.querySelector(".image").alt = om.acf.image;
 
                     klon.querySelector("[data-title]").textContent = om.title.rendered;
                     klon.querySelector("[data-text]").innerHTML = om.content.rendered;
@@ -91,8 +100,5 @@
         }
 
     </script>
-
-</body>
-
 
 </html>

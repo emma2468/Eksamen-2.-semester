@@ -36,6 +36,7 @@
 
         <!--       Section til indhold af modale vinduet, når man trykker på en vare-->
 
+         <!--        modal vindue-->
 
         <section id="modal">
             <div id="modal_content">
@@ -55,6 +56,8 @@
         <!--    section til site nav-->
 
         <div class="row">
+
+
             <!--    sorteringsknapper/navigationen blandt vare-->
             <div class="column1">
                 <section id="sorteringsknapper">
@@ -99,6 +102,8 @@
             </div>
 
         </div>
+
+
     </main>
 
     <?php include "footer.html";?>
@@ -166,6 +171,7 @@
                     klon.querySelector(".kob").href = vare.acf.kob;
                     klon.querySelector(".title").textContent = vare.title.rendered;
                     klon.querySelector(".image").src = vare.acf.image;
+                    klon.querySelector(".image").alt = vare.acf.image;
 
                     //når man klikker på følgende elementer går man videre til modal
                     klon.querySelector(".image").addEventListener("click", () => {
