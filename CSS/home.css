@@ -134,6 +134,13 @@ body {
     font-size: 1em;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
 .videoListview iframe {
     width: 100%;
 }

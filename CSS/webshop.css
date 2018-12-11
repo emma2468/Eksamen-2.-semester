@@ -43,6 +43,7 @@
 
 
 
+
      /*   MODAL*/
 
 
@@ -107,7 +108,7 @@
 
      #sorteringsknapper {
          background-color: #E6C9C7;
-         height: 700px;
+         height: 1000px;
          width: 170px;
 
      }
@@ -202,7 +203,8 @@
      @media screen and (min-width:563px) {
          .column1 {
              margin-right: 5px;
-         }
+
+             }
 
          #sorteringsknapper {
 
@@ -213,15 +215,21 @@
          }
 
 
-         hr {}
+         hr{
+             width: 240px;
+         }
 
          .column {
 
+            column-count: 2;
+             column-fill:balance;
 
-             width: 50%;
+
 
 
          }
+
+
 
 
 
@@ -246,12 +254,17 @@
          hr {}
 
          .column {
-             column-count: 1;
+             column-count: 2;
 
              width: 50%;
 
 
          }
+         .kobet{
+             font-size: 1em;
+         }
+
+
 
 
 
@@ -263,11 +276,12 @@
 
 
          .column1 {
-             margin-right: 50px;
+             margin-right: 48px;
          }
 
          .column {
              column-count: 2;
+
 
              width: 50%;
 
@@ -285,11 +299,13 @@
          }
      }
 
+
+
      @media screen and (min-width:1000px) {
 
 
          .column1 {
-             margin-right: 25px;
+             margin-right: 35px;
 
 
          }
