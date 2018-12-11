@@ -8,11 +8,11 @@
 
     <title>Style Editor Om</title>
 
-     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
 
@@ -46,59 +46,59 @@
 </body>
 
 
-    <?php include "footer.html";?>
+<?php include "footer.html";?>
 
-  <script>
-        document.addEventListener("DOMContentLoaded", getJSON);
+<script>
+    document.addEventListener("DOMContentLoaded", getJSON);
 
-        let om;
+    let om;
 
-        let omTemplate = document.querySelector("[data-template]");
-        let omContainer = document.querySelector("[data-container]");
+    let omTemplate = document.querySelector("[data-template]");
+    let omContainer = document.querySelector("[data-container]");
 
-        async function getJSON() {
-            let jasonData = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/om?slug=anette-thyrsted%22/");
-            om = await jasonData.json();
-            visOm();
-            console.log(om);
-        }
+    async function getJSON() {
+        let jasonData = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/om?slug=anette-thyrsted%22/");
+        om = await jasonData.json();
+        visOm();
+        console.log(om);
+    }
 
 
-        function visOm() {
-            console.log(om);
-            om.forEach(om => {
-                    let klon = omTemplate.cloneNode(true).content;
-                    klon.querySelector(".image").src = om.acf.image;
-                    klon.querySelector(".image").alt = om.acf.image;
+    function visOm() {
+        console.log(om);
+        om.forEach(om => {
+                let klon = omTemplate.cloneNode(true).content;
+                klon.querySelector(".image").src = om.acf.image;
+                klon.querySelector(".image").alt = om.acf.image;
 
-                    klon.querySelector("[data-title]").textContent = om.title.rendered;
-                    klon.querySelector("[data-text]").innerHTML = om.content.rendered;
+                klon.querySelector("[data-title]").textContent = om.title.rendered;
+                klon.querySelector("[data-text]").innerHTML = om.content.rendered;
 
-                    omContainer.appendChild(klon);
+                omContainer.appendChild(klon);
 
-                }
-
-            )
-        }
-
-        //-------til toppen knappen---------
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("button").style.display = "block";
-            } else {
-                document.getElementById("button").style.display = "none";
             }
-        }
 
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+        )
+    }
 
-    </script>
+    //-------til toppen knappen---------
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("button").style.display = "block";
+        } else {
+            document.getElementById("button").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>
 
 </html>
