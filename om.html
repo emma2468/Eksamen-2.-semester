@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Style Editor Om</title>
 
@@ -9,86 +9,81 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
 
 
+</head>
 
 
-  </head>
+<body>
 
+    <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
 
+    <section class="om" data-container></section>
+    <template data-template>
+        <article class="omListview">
+            <div class="row">
+                <div class="column">
+                    <img class="image" src="" alt="">
+                </div>
+                <div class="column">
+                    <h2 data-title></h2>
+                    <p data-text></p>
+                </div>
+            </div>
+        </article>
+    </template>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", getJSON);
 
-  <body>
+        let om;
 
+        let omTemplate = document.querySelector("[data-template]");
+        let omContainer = document.querySelector("[data-container]");
 
-
-      <section class="om" data-container></section>
-      <template data-template>
-          <article class="omListview">
-
-
-
-                 <div class="row">
-
-                 <div class="column">
-             <img class="image" src="" alt="">
-                     </div>
-
-                     <div class="column">
-              <h2 data-title></h2>
-              <p data-text></p>
-
-                     </div>
-              </div>
-          </article>
-
-
-      </template>
-
-
-
-<script>
-
-    document.addEventListener("DOMContentLoaded", getJSON);
-
-    let om;
-
-    let omTemplate = document.querySelector("[data-template]");
-    let omContainer = document.querySelector("[data-container]");
-
-    async function getJSON(){
-    let jasonData = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/om?slug=anette-thyrsted%22/");
-        om = await jasonData.json();
-        visOm();
-        console.log (om);
-    }
-
-
-    function visOm() {
-        console.log(om);
-        om.forEach(om => {
-            let klon = omTemplate.cloneNode(true).content;
-            klon.querySelector(".image").src = om.acf.image;
-
-            klon.querySelector("[data-title]").textContent = om.title.rendered;
-            klon.querySelector("[data-text]").innerHTML = om.content.rendered;
-
-            omContainer.appendChild(klon);
-
+        async function getJSON() {
+            let jasonData = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/om?slug=anette-thyrsted%22/");
+            om = await jasonData.json();
+            visOm();
+            console.log(om);
         }
 
-                  )
-    }
 
+        function visOm() {
+            console.log(om);
+            om.forEach(om => {
+                    let klon = omTemplate.cloneNode(true).content;
+                    klon.querySelector(".image").src = om.acf.image;
 
+                    klon.querySelector("[data-title]").textContent = om.title.rendered;
+                    klon.querySelector("[data-text]").innerHTML = om.content.rendered;
 
+                    omContainer.appendChild(klon);
 
+                }
 
+            )
+        }
 
+        //-------til toppen knappen---------
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("button").style.display = "block";
+            } else {
+                document.getElementById("button").style.display = "none";
+            }
+        }
 
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
-      </script>
+    </script>
 
-  </body>
+</body>
 
 
 </html>
