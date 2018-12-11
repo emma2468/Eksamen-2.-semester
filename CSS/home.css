@@ -383,6 +383,7 @@ body {
 #santa_container{
     position:absolute;
     top: auto;
+    right: 45px;
 }
 
 #santa_sprite{
