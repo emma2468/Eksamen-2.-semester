@@ -13,6 +13,8 @@
 
     <main class="eventContainer">
 
+        <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
+
         <section class="singleContainer">
             <article class="event">
                <a href="eventstyling.html"><button class="tilbage">TILBAGE</button></a>
@@ -159,6 +161,23 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+        //---------til toppen knap----------
+
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("button").style.display = "block";
+    } else {
+        document.getElementById("button").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
     </script>
 
