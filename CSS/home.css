@@ -226,8 +226,9 @@ body {
     .videoListview iframe {
         width: 70%;
     }
+}
 
-    @media screen and (min-width:780px) {
+@media screen and (min-width:780px) {
 
 
         .videoListview p {
@@ -276,14 +277,14 @@ body {
 
     }
 
-    @media screen and (min-width:920px) {
+@media screen and (min-width:920px) {
 
         .videoListview iframe {
             width: 60%;
         }
     }
 
-    @media screen and (min-width:1100px) {
+@media screen and (min-width:1100px) {
 
 
         .stylingeventListview {
@@ -306,7 +307,7 @@ body {
         }
     }
 
-    @media screen and (min-width:1300px) {
+@media screen and (min-width:1300px) {
 
         .videoListview iframe {
             width: 40%;
@@ -363,17 +364,34 @@ body {
 
 
 
-/*
 
 
-    INTERAKTIV SVG*/
 
-    @media screen and (min-width:1300px) {
 
-#santa_container {
+
+
+
+
+  /*  INTERAKTIV SVG*/
+
+@media screen and (min-width:414px){
+    #santa_container{
+
+    }
+    #tooltip .tooltiptext{
+       display: none;
+    }
+
+
+}
+
+
+    @media screen and (min-width:1024px) {
+
+    #santa_container {
    position: absolute;
-    top: 1200px;
-    left: 10em;
+    top: 730px;
+    left: 50em;
 
 
 }
@@ -382,8 +400,8 @@ body {
     background-image: url(../nisse-01.svg);
     background-size: 800% 100%;
 
-    width: 10vw;
-    height: 12vw;
+    width: 15vw;
+    height: 22vw;
 
 
     }
@@ -392,7 +410,7 @@ body {
 
 
 .waving {
-        animation-name: waving;
+
        animation-iteration-count: 1;
     animation-duration: 4s;
       animation-timing-function: steps(8);
