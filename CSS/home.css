@@ -383,7 +383,7 @@ body {
 #santa_container{
     position:absolute;
     top: auto;
-    right: 45px;
+    right: 40px;
 }
 
 #santa_sprite{
@@ -445,8 +445,8 @@ font-weight: 100;
   position: absolute;
   z-index: 1;
   bottom: 90%;
-  left: 50%;
-  margin-left: -60px;
+  left: -80%;
+  margin-left: 60px;
 
   /* Fade in tooltip */
   opacity: 0;
