@@ -16,10 +16,6 @@
 
   <body>
 
-    <main>
-
-    <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
-
     <section id="Kontakt_information">
            <h1>Kontakt</h1>
         <h4>Style Editor | Anette Thyrsted</h4>
@@ -53,28 +49,6 @@
 
     </section>
 
-    </main>
-
-    <script>
-
-        //til toppen knappen
-
-        window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("button").style.display = "block";
-    } else {
-        document.getElementById("button").style.display = "none";
-    }
-}
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-      </script>
 
   </body>
 
