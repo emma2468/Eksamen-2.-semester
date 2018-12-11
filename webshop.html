@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
 
@@ -18,6 +19,9 @@
     <?php include "header.html";?>
 
     <main>
+
+        <!--        til toppen knappen-->
+        <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
 
         <!--       Section til indhold af modale vinduet, når man trykker på en vare-->
 
@@ -40,7 +44,7 @@
         <!--    section til site nav-->
 
         <div class="row">
-                 <!--    sorteringsknapper/navigationen blandt vare-->
+            <!--    sorteringsknapper/navigationen blandt vare-->
             <div class="column1">
                 <section id="sorteringsknapper">
                     <h1>VÆLG KATAGORI</h1>
@@ -65,8 +69,6 @@
 
             <div class="column">
 
-
-
                 <section class="vare"></section>
                 <template class="vare_template">
                     <article class="vare_container">
@@ -86,12 +88,6 @@
             </div>
 
         </div>
-
-
-
-
-
-
     </main>
 
     <?php include "footer.html";?>
@@ -122,14 +118,10 @@
             visVare();
         }
 
-
-
         //forEach loop til sortering af genre / sorteringsknapperne
         document.querySelectorAll(".menu_item").forEach(knap => {
             knap.addEventListener("click", filtrering);
         })
-
-
 
         //funtion til filtrering
         function filtrering() {
@@ -151,9 +143,6 @@
                     udskriv();
                 }
 
-
-
-
                 //udskrivningen når man trykker på en af filtreringsknapperne
 
                 function udskriv() {
@@ -166,9 +155,6 @@
                     klon.querySelector(".kob").href = vare.acf.kob;
                     klon.querySelector(".title").textContent = vare.title.rendered;
                     klon.querySelector(".image").src = vare.acf.image;
-
-
-
 
                     //når man klikker på følgende elementer går man videre til modal
                     klon.querySelector(".image").addEventListener("click", () => {
@@ -211,13 +197,28 @@
             modal.classList.remove("vis");
         }
 
+        //----------til toppen knappen--------
 
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("button").style.display = "block";
+            } else {
+                document.getElementById("button").style.display = "none";
+            }
+        }
 
-
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
     </script>
 
 
 </body>
+
 </html>

@@ -1,61 +1,77 @@
+body {
+    display: block;
+    font-family: 'Heebo', sans-serif;
+}
 
+.image {
+    width: 100%;
+}
 
+.omListview {
+    background-color: #E9B935;
+}
 
-      body{
-        display: block;
-            font-family: 'Heebo', sans-serif;
-      }
+h2 {
+    color: #0B584D;
+    font-weight: 100;
+}
 
-      .image{
-          width: 100%;
-      }
-
-
-
-
-
-      .omListview{
-          background-color: #E9B935;
-      }
-
-      h2{
-          color: #0B584D;
-          font-weight: 100;
-      }
-
-      p{
-          color: white;
-          font-weight: 300;
-      }
-
-
-      @media screen and (min-width:768px){
-
-        .image{
-              height: 600px;
-              width: 90%;
-              margin-top: 30px;
-            margin-left: 10px;
-
-          }
-
-            .column {
-    float: left;
-    width: 50%;
-    margin-bottom: 50px;
-          font-size: 1.3em;
+p {
+    color: white;
+    font-weight: 300;
 }
 
 
+@media screen and (min-width:768px) {
+
+    .image {
+        height: 600px;
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 10px;
+
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 50px;
+        font-size: 1.3em;
+    }
 
     .row:after {
-    content: "";
-    display: table;
-    clear: both;
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
+/*-----------til toppen knappen----------*/
 
+#button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+    padding: 5px;
+}
 
+@media only screen and (max-width: 600px) {
+    #button {
+        bottom: 20px;
+        right: 10px;
+    }
+}
 
-      }
-
+#button:hover {
+    color: darkgrey;
+    font-size: 20px;
+}

@@ -104,33 +104,4 @@ h5{
 
           }
 
-/*til toppen knappen*/
-
-#button {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: white;
-    color: black;
-    font-family: 'Open Sans Condensed', sans-serif;
-    cursor: pointer;
-    padding: 5px;
-}
-
-@media only screen and (max-width: 600px) {
-    #button {
-        bottom: 20px;
-        right: 10px;
-    }
-}
-
-#button:hover {
-    color: darkgrey;
-    font-size: 20px;
-}
 
