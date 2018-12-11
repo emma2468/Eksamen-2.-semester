@@ -362,7 +362,42 @@ body {
     }
 
 
-.tooltip  {
+
+/*
+
+
+    INTERAKTIV SVG*/
+
+#santa {
+
+    background-image: url(nissew-01.svg);
+    background-size: 100% 100%;
+
+    width: 120px;
+    height: 101px;
+
+    position: absolute;
+    top: 10vw;
+}
+
+.waving {
+    animation-duration: 5s;
+    animation-timing-function: steps(8);
+    animation-fill-mode: forwards;
+    animation-name: waving;
+}
+
+@keyframes waving {
+    from {
+        right: -30vw;
+    }
+    to {
+        right: 80vw;
+    }
+
+}
+
+#tooltip  {
 
   width: 180px;
   padding: 4px 0;
@@ -374,11 +409,11 @@ body {
   border-radius: 3px;
     }
 
-  .button:hover {
+.button:hover {
     cursor: pointer;
   }
 
-.tooltip .tooltiptext {
+#tooltip .tooltiptext {
   visibility: hidden;
   width: 220px;
   background-color: #555;
@@ -400,7 +435,7 @@ body {
 }
 
 /* Tooltip arrow */
-.tooltip .tooltiptext::after {
+#tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -412,7 +447,7 @@ body {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+#tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
