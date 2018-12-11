@@ -1,8 +1,10 @@
 /*slideshow*/
 
 .slideshow {
-    max-width: 1000px;
-    position: relative;
+    max-width: 1100px;
+    display: block;
+    margin: auto;
+
 
 }
 
@@ -134,7 +136,7 @@ body {
     font-size: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -326,7 +328,10 @@ body {
 
     .stylingeventListview {
         text-align: left;
-        padding: 15vw;
+        padding-top: 10vw;
+        padding-left: 18vw;
+        padding-right: 18vw;
+        padding-bottom: 10vw;
         margin: 3vw;
         font-size: 1.3em;
         margin-top: -5vw;
