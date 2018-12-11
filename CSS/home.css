@@ -373,69 +373,65 @@ body {
 
 
   /*  INTERAKTIV SVG*/
+@media only screen and (max-width:793px) {
 
-@media screen and (min-width:414px){
-    #santa_container{
-
+  #santa_container{
+    display: none;
     }
-    #tooltip .tooltiptext{
-       display: none;
-    }
-
-
 }
 
 
-    @media screen and (min-width:1024px) {
-
-    #santa_container {
-   position: absolute;
-    top: 730px;
-    left: 50em;
-
-
-}
 
 #santa_sprite{
     background-image: url(../nisse-01.svg);
-    background-size: 800% 100%;
+    background-size: 200% 100%;
 
     width: 15vw;
     height: 22vw;
 
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+-webkit-animation-timing-function: steps(2); /* Safari 4.0 - 8.0 */
+
+    animation-name: example;
+
+     animation-fill-mode:both;
+
+
+     animation-iteration-count: infinite;
+
+
+
 
     }
 
+@-webkit-keyframes example {
+  0% {background-position: 0 0;
+    }
+
+  100% {background-position: 200% 0;
 
 
+    }}
 
-.waving {
-
-       animation-iteration-count: 1;
-    animation-duration: 4s;
-      animation-timing-function: steps(8);
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    background-position: -800% 0;
-
-
-
-}
-
-
-
-
-
+.tooltip {
+  position: relative;
+  display: inline-block;
+    }
 
 
 .button:hover {
     cursor: pointer;
   }
 
-#tooltip .tooltiptext {
+.tooltip .tooltiptext {
+
+font-family: 'Heebo', sans-serif;
+font-weight: 100;
+
   visibility: hidden;
   width: 220px;
-  background-color: #555;
+  background-color: #6CB4BE;
   color: #fff;
   text-align: center;
   padding: 5px 0;
@@ -444,7 +440,7 @@ body {
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  bottom: 125%;
+  bottom: 90%;
   left: 50%;
   margin-left: -60px;
 
@@ -453,27 +449,14 @@ body {
   transition: opacity 0.3s;
 }
 
-/*Tooltip arrow*/
-
-#tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-#tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
 
 
-}
+
+
 
 /*    --------til toppen knappen----------*/
 
