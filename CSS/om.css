@@ -14,16 +14,19 @@ body {
 h2 {
     color: #0B584D;
     font-weight: 100;
+    padding: 2em;
 }
 
 p {
     color: white;
     font-weight: 300;
+    padding: 2em;
 }
 
 
 @media screen and (min-width:768px) {
 
+/*
     .image {
         height: 600px;
         width: 90%;
@@ -44,6 +47,7 @@ p {
         display: table;
         clear: both;
     }
+*/
 }
 
 /*-----------til toppen knappen----------*/
