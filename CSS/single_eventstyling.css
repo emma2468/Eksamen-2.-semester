@@ -1,6 +1,5 @@
-
 .eventContainer{
-    background-color: #e8b931;
+    background-color: #65b0ba;
     padding-bottom: 2em;
 }
 
@@ -31,7 +30,6 @@
     text-align: center;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    padding-top: 1.5em;
     font-size: 1.6em;
     color: #005860;
 }
@@ -44,6 +42,10 @@
     padding-bottom: 1.5em;
 }
 
+.data-billede{
+    width: 100%;
+}
+
 .tilbage{
     border: 1px solid white;
     font-family: 'heebo', sans-serif;
@@ -54,7 +56,7 @@
     padding-right: 1.5em;
     margin-left: 2em;
     margin-top: 1em;
-    background-color: #e8b931;
+    background-color: #65b0ba;
     color: white;
 }
 
@@ -72,6 +74,7 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   position: relative;
+  margin: auto;
 }
 
 @media screen and (min-width:640px){
@@ -95,38 +98,6 @@ img {vertical-align: middle;}
     }
 }
 
-/*
-.billeder_container{
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 95% 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        ". . ."
-        ". b ."
-        ". . ."
-
-}
-*/
-
-/*
-.mySlides{
-
-    grid-area: b;
-}
-
-
-.prev{
-        grid-area: p;
-
-}
-
-.next{
-
-        grid-area: b;
-
-}
-*/
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -169,7 +140,7 @@ img {vertical-align: middle;}
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 20px 20px;
+  padding: 8px 12px;
   position: absolute;
   top: 0;
 }
@@ -212,3 +183,4 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
