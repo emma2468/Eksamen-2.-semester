@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/eventstyling.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Event Styling</title>
+    <title>Event Styling Eventstyling</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
    <main>
 
        <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
+
 
        <section class="styling_events" data-container></section>
        <template data-template>
@@ -20,6 +29,8 @@
                <p class="description" data-text></p>
            </article>
        </template>
+
+
 
        <section class="events_portfolio" data-container1></section>
        <template data-template1>
@@ -77,6 +88,7 @@
                 let klon = eventTemplate.cloneNode(true).content;
                 klon.querySelector("[data-title1]").textContent = events.title.rendered;
                 klon.querySelector("img").src = events.acf.image;
+                  klon.querySelector("img").alt = events.acf.image;
                 //single
                 klon.querySelector("img").addEventListener("click", ()=>{
                     window.location.href = "single_eventstyling.html?id=" + events.id;
