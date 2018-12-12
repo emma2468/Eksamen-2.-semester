@@ -122,7 +122,7 @@
 
                     <div class="tooltip">
                         <span class="tooltiptext">Har du husket alle julegaverne? - nej! så tryk på mig og jeg vil hjælpe dig til at finde de sidste par gaver. </span>
-                        <a href="webshop.html">
+                        <a href="webshop.php">
                             <div id="santa_sprite"></div>
                         </a>
 
