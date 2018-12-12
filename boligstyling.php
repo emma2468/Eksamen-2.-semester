@@ -101,7 +101,7 @@
                 klon.querySelector("img").alt = events.acf.image;
                 //single
                 klon.querySelector("img").addEventListener("click", () => {
-                    window.location.href = "single_boligstyling.html?id=" + events.id;
+                    window.location.href = "single_boligstyling.php?id=" + events.id;
                 })
                 //singleslut
                 eventContainer.appendChild(klon);
