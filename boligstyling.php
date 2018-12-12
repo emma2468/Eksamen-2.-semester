@@ -49,7 +49,6 @@
 
     </main>
 
-    <?php include "footer.html";?>
 
     <script>
         document.addEventListener("DOMContentLoaded", getJson);
@@ -127,6 +126,8 @@
         }
 
     </script>
+
+ <?php include "footer.html";?>
 
 </body>
 

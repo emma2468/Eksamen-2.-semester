@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
+    <title>Style Editor</title>
+
+
     <link rel="stylesheet" href="CSS/home.css" type="text/css">
    <link href="CSS/footer.css" rel="stylesheet">
     <link href="CSS/header.css" rel="stylesheet">
 
 
-
-    <title>Style Editor</title>
 
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,6 +26,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
