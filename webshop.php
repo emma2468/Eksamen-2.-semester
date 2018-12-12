@@ -134,7 +134,7 @@
 
         //henter json fra wordpress
         async function getJson() {
-            let jsondata = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/shop/");
+            let jsondata = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/shop/?per_page=100");
 
             allVare = await jsondata.json();
             console.log(vareFilter);
