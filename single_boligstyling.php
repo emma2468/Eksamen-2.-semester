@@ -18,6 +18,8 @@
 
 <body>
 
+    <?php include "header.html";?>
+
     <main class="eventContainer">
 
         <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
@@ -204,6 +206,8 @@
         }
 
     </script>
+
+     <?php include "footer.html";?>
 
 
 

@@ -105,7 +105,6 @@
 
     </main>
 
-    <?php include "footer.html";?>
 
     <script>
         // der gør at HTML loades før json loades
@@ -234,6 +233,7 @@
 
     </script>
 
+  <?php include "footer.html";?>
 
 </body>
 

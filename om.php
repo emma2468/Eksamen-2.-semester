@@ -24,6 +24,7 @@
 <body>
     <?php include "header.html";?>
 
+   <main>
     <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
 
     <section class="om" data-container></section>
@@ -41,12 +42,9 @@
         </article>
     </template>
 
+</main>
 
 
-</body>
-
-
-<?php include "footer.html";?>
 
 <script>
     document.addEventListener("DOMContentLoaded", getJSON);
@@ -100,5 +98,11 @@
     }
 
 </script>
+
+ <?php include "footer.html";?>
+
+</body>
+
+
 
 </html>

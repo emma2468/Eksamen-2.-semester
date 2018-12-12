@@ -20,9 +20,12 @@
 
 <body>
 
-    <!--    <?php include "header.html";?>-->
+  <?php include "header.html";?>
 
-    <div class="slideshow">
+
+
+    <main>
+          <div class="slideshow">
 
 
         <div class="slide fade">
@@ -43,8 +46,6 @@
 
     </div>
 
-
-    <main>
 
         <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
 
@@ -129,11 +130,6 @@
 
 
     </main>
-
-    <!--
-    <?php include "footer.html";?>
-
--->
 
 
     <script>
@@ -272,6 +268,13 @@
         }
 
     </script>
+
+
+    <?php include "footer.html";?>
+
+
+
+
 
 </body>
 

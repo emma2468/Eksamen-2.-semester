@@ -24,6 +24,8 @@
 <body>
     <?php include "header.html";?>
 
+    <main>
+
     <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
 
     <section id="Kontakt_information">
@@ -59,10 +61,9 @@
 
     </section>
 
+    </main>
 
-</body>
 
-<?php include "footer.html";?>
 
 
 <script>
@@ -84,6 +85,12 @@
     }
 
 </script>
+
+
+<?php include "footer.html";?>
+
+</body>
+
 
 
 </html>

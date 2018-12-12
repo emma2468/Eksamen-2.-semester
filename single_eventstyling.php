@@ -17,6 +17,8 @@
 
 <body>
 
+    <?php include "header.html";?>
+
     <main class="eventContainer">
 
         <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
@@ -98,6 +100,8 @@
         </div>
 
     </main>
+
+
 
     <script>
         let urlParams = new URLSearchParams(window.location.search);
@@ -195,7 +199,7 @@
     </script>
 
 
-
+     <?php include "footer.html";?>
 </body>
 
 </html>
