@@ -32,7 +32,10 @@ ul {
 .nav_logo {
     width: 250px;
     display: none;
+}
 
+.logo_desk{
+    display:none;
 }
 
 .nav_burger_logo {
@@ -113,6 +116,10 @@ display: none;
 
         display: block;
         justify-self: center;
+    }
+
+    .logo_desk{
+        display: block;
     }
 
     .burgermenu {
