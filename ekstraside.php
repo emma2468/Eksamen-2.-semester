@@ -33,13 +33,13 @@
 
         <a href="eventstyling.php"><section class="styling_events" data-container>
             <h1 class="heading">EVENT STYLING</h1>
-            <img src="event_portfolio.jpg" alt="event">
+            <img src="img/event_portfolio.jpg" alt="event">
         </section></a>
 
 
         <a href="boligstyling.php"><section class="styling_events" data-container1>
             <h1 class="heading">BOLIG STYLING</h1>
-            <img src="bolig_portfolio.jpg" alt="event">
+            <img src="img/bolig_portfolio.jpg" alt="event">
         </section></a>
 
     </main>
