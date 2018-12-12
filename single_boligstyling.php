@@ -36,7 +36,7 @@
 
         <section class="singleContainer">
             <article class="home">
-                <a href="boligstyling.html"><button class="tilbage">TILBAGE</button></a>
+                <a href="boligstyling.php"><button class="tilbage">TILBAGE</button></a>
                 <h2 class="data-navn"></h2>
                 <p class="data-langbeskrivelse"></p>
             </article>

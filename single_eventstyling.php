@@ -37,7 +37,7 @@
 
         <section class="singleContainer">
             <article class="event">
-                <a href="eventstyling.html"><button class="tilbage">TILBAGE</button></a>
+                <a href="eventstyling.php"><button class="tilbage">TILBAGE</button></a>
                 <h2 class="data-navn"></h2>
                 <p class="data-langbeskrivelse"></p>
 
