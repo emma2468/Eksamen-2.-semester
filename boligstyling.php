@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/boligstyling.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+       <link href="CSS/footer.css" rel="stylesheet">
+    <link href="CSS/header.css" rel="stylesheet">
+
+
     <title>Event Styling Boligstyling</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
