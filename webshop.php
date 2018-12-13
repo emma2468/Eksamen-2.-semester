@@ -54,7 +54,8 @@
                 <div class="modal_langbeskrivelse"></div>
                 <img class="modal_image" src="" alt="">
                 <div class="modal_pris"></div>
-                <a class="kob" href="" target="_blank"><button class="kobet">KØB</button></a>
+                <a class="kob" href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_blank"><button class="kobet">KØB</button></a>
+
 
 
             </div>
@@ -101,8 +102,7 @@
 
                         <div class="pris"></div>
 
-
-                        <a class="kob" href="" target="_blank"><button class="kobet">KØB</button></a>
+                      <a class="kob" href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_blank"><button class="kobet">KØB</button></a>
                     </article>
                 </template>
             </div>

@@ -189,11 +189,6 @@ a {
 
 .row1 {
     display: flex;
-        padding: 20px;
-
-
-
-
 
     }
 
@@ -237,7 +232,7 @@ a {
         text-align: left;
         padding: 2vw;
         margin: 3vw;
-        font-size: 1em;
+        font-size: 1.5em;
 
 
     }

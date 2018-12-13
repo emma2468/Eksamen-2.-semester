@@ -37,6 +37,9 @@ main{
          }
 
 
+.row{
+    margin: 20px 20px;
+}
      /*   MODAL*/
 
     .modal_image{
@@ -207,7 +210,7 @@ main{
 
 
     .modal_image{
-     width: 20%;
+     width: 40%;
     height: 40%;
 }
 
@@ -294,9 +297,9 @@ main{
   -moz-column-gap: 40px; /* Firefox */
   column-gap: 40px;
 
-  -webkit-column-rule: 4px double #ff00ff; /* Chrome, Safari, Opera */
-  -moz-column-rule: 4px double #ff00ff; /* Firefox */
-  column-rule: 4px double #ff00ff;
+  -webkit-column-rule: 4px double #0B584D; /* Chrome, Safari, Opera */
+  -moz-column-rule: 4px double #0B584D; /* Firefox */
+  column-rule: 4px double #0B584D;
 
 
      }
@@ -565,7 +568,7 @@ main{
   -moz-column-gap: 60px; /* Firefox */
   column-gap: 60px;
 
-  -webkit-column-rule: 4px double #ff00ff; /* Chrome, Safari, Opera */
+  -webkit-column-rule: 4px double #0B584D; /* Chrome, Safari, Opera */
   -moz-column-rule: 4px double #0B584D; /* Firefox */
   column-rule: 4px double #0B584D;
 

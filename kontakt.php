@@ -33,6 +33,102 @@
 
 
 <body>
+
+
+         <div class="burgermenu">
+        <a href="index.php"><img class="nav_burger_logo" src="img/logo_styleeditor-01.png" alt="nav_logo"></a>
+        <button class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+    </div>
+
+
+
+<header class="mobil">
+
+
+
+        <!--Navigationsbaren på laptop-->
+        <nav>
+            <ul>
+         <a href="ekstraside.php">
+                    <li>PORTFOLIO</li>
+
+                </a>
+
+                  <a href="webshop.php">
+                    <li>SHOP</li>
+
+                </a>
+
+
+                <a href="om.php">
+                    <li>OM STYLE EDITOR</li>
+                </a>
+                <a href="kontakt.php">
+                    <li>KONTAKT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+
+<header class="desktop">
+
+        <nav>
+            <ul>
+
+
+                 <div class="dropdown">
+               <li>PORTFOLIO ↓</li>
+
+              <div class="dropdown-content">
+    <a href="eventstyling.php"><li>Event Styling</li></a>
+     <a href="boligstyling.php"><li>Bolig Styling</li></a>
+  </div>
+</div>
+
+
+
+                  <a href="webshop.php">
+                    <li>SHOP</li>
+
+                </a>
+
+                <a href="index.php"><img class="nav_logo" src="img/logo_styleeditor-01.png" alt="nav_logo"></a>
+
+
+                <a href="om.php">
+                    <li>OM STYLE EDITOR</li>
+                </a>
+                <a href="kontakt.php">
+                    <li>KONTAKT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+   <script>
+//Script til burgermenu
+function onLoad() {
+
+    function toggleMenu() {
+        document.querySelector(".burger").classList.toggle("change");
+        document.querySelector("nav").classList.toggle("show");
+    }
+    document.querySelector(".burger").addEventListener("click", toggleMenu);
+    document.querySelector("ul").addEventListener("click", toggleMenu);
+
+     }
+
+       //Vil først starte når DOM-indholdet er loaded
+document.addEventListener("DOMContentLoaded", function (event) {
+    onLoad();
+});
+</script>
     <?php include "header.html";?>
 
     <main>
@@ -95,7 +191,6 @@
 </script>
 
 
-    <?php include "footer.html";?>
 
 </body>
 

@@ -1,3 +1,7 @@
+   .desktop{
+        display: none;
+    }
+
 
 .mobil {
     display: grid;
@@ -8,10 +12,13 @@
 
 }
 
+
+
 .burgermenu {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 .burger {
@@ -20,6 +27,7 @@
     border: none;
     justify-self: end;
     padding: 1em;
+
 }
 
 ul {
@@ -77,6 +85,9 @@ nav {
 nav.show {
     max-height: 500px;
 }
+
+
+
 
 .change .bar1 {
     transform: rotate(-45deg) translate(-2px, 6px);

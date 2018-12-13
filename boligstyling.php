@@ -38,7 +38,7 @@
             <article class="stylingeventListview">
                 <h1 class="heading" data-title></h1>
                 <p class="description" data-text></p>
-                <button onclick="myFunction()" id="readmore">Læs mere</button>
+               <button onclick="myFunction()" id="myBtn">Read more</button>
 
             </article>
         </template>
@@ -130,23 +130,21 @@
         }
 
         //------ læs mere knap-----
-
-        function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("readmore");
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
+    btnText.innerHTML = "Læs mere";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Læs mindre";
+    btnText.innerHTML = "tilbage";
     moreText.style.display = "inline";
   }
 }
-
     </script>
 
  <?php include "footer.html";?>

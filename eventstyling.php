@@ -38,7 +38,7 @@
             <article class="stylingeventListview">
                 <h1 class="heading" data-title></h1>
                 <p class="description" data-text></p>
-                <button onclick="myFunction()" id="readmore">Læs mere</button>
+
             </article>
         </template>
 
@@ -133,23 +133,6 @@
             document.documentElement.scrollTop = 0;
         }
 
-         //------ læs mere knap-----
-
-        function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("readmore");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Læs mindre";
-    moreText.style.display = "inline";
-  }
-}
 
 
     </script>

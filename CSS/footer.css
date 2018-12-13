@@ -1,8 +1,14 @@
 
+  #indholdet_footer{
+       margin-top: 20px;
 
+
+    }
 .ikoner,
 .indholdet{
         text-align: center;
+
+
     }
 
 #desktop_indholdet{
@@ -52,11 +58,13 @@ h3{
     #indholdet_footer{
         display: none;
 
+
     }
 
 #desktop_indholdet{
     display:block;
     text-align: center;
+    margin-top: 20px;
 
 
     }}
