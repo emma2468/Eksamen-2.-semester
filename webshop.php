@@ -21,12 +21,12 @@
 
     <title>Style Editor Webshop</title>
 
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 
 
@@ -44,7 +44,7 @@
 
         <!--       Section til indhold af modale vinduet, når man trykker på en vare-->
 
-         <!--        modal vindue-->
+        <!--        modal vindue-->
 
         <section id="modal">
             <div id="modal_content">
@@ -70,7 +70,11 @@
             <!--    sorteringsknapper/navigationen blandt vare-->
             <div class="column1">
                 <section id="sorteringsknapper">
+<<<<<<< HEAD
                     <h1>VÆLG KATRGORI</h1>
+=======
+                    <h1>VÆLG KATEGORI</h1>
+>>>>>>> origin/master
                     <div class="knapper">
                         <button class="menu_item" data_kategori="alle">ALLE</button>
                         <button class="menu_item" data_kategori="VINTAGE GLAS">GLAS</button>
@@ -242,7 +246,7 @@
 
 
 
-  <?php include "footer.html";?>
+    <?php include "footer.html";?>
 </body>
 
 </html>
