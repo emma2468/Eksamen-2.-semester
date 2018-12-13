@@ -1,14 +1,14 @@
-
-<header class="mobil">
-
-       <div class="burgermenu">
-        <a href="index.php"><img class="nav_burger_logo" src="img/logo_styleeditor.svg" alt="nav_logo"></a>
+     <div class="burgermenu">
+        <a href="index.php"><img class="nav_burger_logo" src="img/logo_styleeditor-01.png" alt="nav_logo"></a>
         <button class="burger">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </button>
     </div>
+<header class="mobil">
+
+
 
         <!--Navigationsbaren på laptop-->
         <nav>
@@ -33,8 +33,6 @@
             </ul>
         </nav>
     </header>
-
-
 <header class="desktop">
         <!--Navigationsbaren på laptop-->
         <nav>
@@ -42,7 +40,7 @@
 
 
                  <div class="dropdown">
-               <li>PORTFOLIO ↓ ∇ </li>
+               <li>PORTFOLIO ↓</li>
 
               <div class="dropdown-content">
     <a href="eventstyling.php"><li>Event Styling</li></a>
@@ -57,7 +55,7 @@
 
                 </a>
 
-                <a href="index.php"><img class="nav_logo" src="img/logo_styleeditor.svg" alt="nav_logo"></a>
+                <a href="index.php"><img class="nav_logo" src="img/logo_styleeditor-01.png" alt="nav_logo"></a>
 
 
                 <a href="om.php">
@@ -70,21 +68,3 @@
         </nav>
     </header>
 
-   <script>
-//Script til burgermenu
-function onLoad() {
-
-    function toggleMenu() {
-        document.querySelector(".burger").classList.toggle("change");
-        document.querySelector("nav").classList.toggle("show");
-    }
-    document.querySelector(".burger").addEventListener("click", toggleMenu);
-    document.querySelector("ul").addEventListener("click", toggleMenu);
-
-     }
-
-       //Vil først starte når DOM-indholdet er loaded
-document.addEventListener("DOMContentLoaded", function (event) {
-    onLoad();
-});
-</script>
