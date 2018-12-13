@@ -103,18 +103,19 @@ h5{
 }
 
           }
-/*-----til toppen knappen----------*/
+/*    --------til toppen knappen----------*/
 
 #button {
+    border-radius: 50%;
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
     font-size: 18px;
-    border: none;
+
     outline: none;
-    background-color: white;
+    background-color: #E6C9C7;
     color: black;
     font-family: 'Open Sans Condensed', sans-serif;
     cursor: pointer;

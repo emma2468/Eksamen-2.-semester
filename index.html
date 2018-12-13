@@ -34,27 +34,105 @@
 
 <body>
 
+     <div class="burgermenu">
+        <a href="index.php"><img class="nav_burger_logo" src="img/logo_styleeditor-01.png" alt="nav_logo"></a>
+        <button class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+    </div>
+<header class="mobil">
+
+
+
+        <!--Navigationsbaren på laptop-->
+        <nav>
+            <ul>
+         <a href="ekstraside.php">
+                    <li>PORTFOLIO</li>
+
+                </a>
+
+                  <a href="webshop.php">
+                    <li>SHOP</li>
+
+                </a>
+
+
+                <a href="om.php">
+                    <li>OM STYLE EDITOR</li>
+                </a>
+                <a href="kontakt.php">
+                    <li>KONTAKT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+<header class="desktop">
+        <!--Navigationsbaren på laptop-->
+        <nav>
+            <ul>
+
+
+                 <div class="dropdown">
+               <li>PORTFOLIO ↓</li>
+
+              <div class="dropdown-content">
+    <a href="eventstyling.php"><li>Event Styling</li></a>
+     <a href="boligstyling.php"><li>Bolig Styling</li></a>
+  </div>
+</div>
+
+
+
+                  <a href="webshop.php">
+                    <li>SHOP</li>
+
+                </a>
+
+                <a href="index.php"><img class="nav_logo" src="img/logo_styleeditor-01.png" alt="nav_logo"></a>
+
+
+                <a href="om.php">
+                    <li>OM STYLE EDITOR</li>
+                </a>
+                <a href="kontakt.php">
+                    <li>KONTAKT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+
   <?php include "header.html";?>
 
 
 
     <main>
+        <!--MOBIL -->
+         <div class="mobil_photo">
+             <img src="img/mobil_photo.jpg" style="height: 20em" width="100%;">
+         </div>
+
+          <!--DESKTOP -->
           <div class="slideshow">
 
 
         <div class="slide fade">
 
-            <a href="eventstyling.html"> <img src="img/event-03.png" alt=""></a>
+            <a href="eventstyling.php"> <img src="img/event-03.png" alt=""></a>
 
         </div>
         <div class="slide fade">
 
-            <a href="boligstyling.html"><img src="img/bolig-01.png" alt=""></a>
+            <a href="boligstyling.php"><img src="img/bolig-01.png" alt=""></a>
 
         </div>
         <div class="slide fade">
 
-            <a href="webshop.html"> <img src="img/shop-02.png" alt=""></a>
+            <a href="webshop.php"> <img src="img/shop-02.png" alt=""></a>
 
         </div>
 
@@ -71,6 +149,7 @@
 
 
         <template data-template>
+
             <article class="stylingeventListview">
                 <h1 class="heading" data-title></h1>
 
@@ -90,7 +169,7 @@
 
                 <div class="row1">
 
-                    <div class="column1">
+                    <div class="column">
                         <img src="" alt="">
 
 
@@ -133,12 +212,13 @@
 
 
                 </div>
-
-
-                <a href="om.html">
+                <a href="om.php">
                     <p data-title2></p>
                     <video data-video src="" type=""></video>
                 </a>
+
+
+
             </article>
         </template>
 
@@ -281,10 +361,61 @@
             document.documentElement.scrollTop = 0;
         }
 
+
+        //Script til burgermenu
+function onLoad() {
+
+    function toggleMenu() {
+        document.querySelector(".burger").classList.toggle("change");
+        document.querySelector("nav").classList.toggle("show");
+    }
+    document.querySelector(".burger").addEventListener("click", toggleMenu);
+    document.querySelector("ul").addEventListener("click", toggleMenu);
+
+     }
+
+       //Vil først starte når DOM-indholdet er loaded
+document.addEventListener("DOMContentLoaded", function (event) {
+    onLoad();
+});
     </script>
 
 
     <?php include "footer.html";?>
+
+
+<section id="indholdet_footer">
+
+<div class="indholdet">
+
+<h3>Style Editor |  Anette Thyrsted</h3>
+<h3>Telefon | 31 77 32 32</h3>
+
+<h3>Email <a href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_top">anette@styleeditor.dk</a></h3>
+<h3>CVR | 39034085</h3>
+
+
+<div class="ikoner">
+
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+</div>
+     </div>
+
+      </section>
+
+<section id="desktop_indholdet">
+
+
+          <h3>Style Editor |  Anette Thyrsted   Telefon | 31 77 32 32 Email <a href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_top">anette@styleeditor.dk</a> CVR | 39034085</h3>
+
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+
+      </section>
+
 
 
 

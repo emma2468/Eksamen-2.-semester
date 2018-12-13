@@ -24,6 +24,78 @@
 </head>
 
 <body>
+<div class="burgermenu">
+        <a href="index.php"><img class="nav_burger_logo" src="img/logo_styleeditor-01.png" alt="nav_logo"></a>
+        <button class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+    </div>
+<header class="mobil">
+
+
+
+        <!--Navigationsbaren på laptop-->
+        <nav>
+            <ul>
+         <a href="ekstraside.php">
+                    <li>PORTFOLIO</li>
+
+                </a>
+
+                  <a href="webshop.php">
+                    <li>SHOP</li>
+
+                </a>
+
+
+                <a href="om.php">
+                    <li>OM STYLE EDITOR</li>
+                </a>
+                <a href="kontakt.php">
+                    <li>KONTAKT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+<header class="desktop">
+        <!--Navigationsbaren på laptop-->
+        <nav>
+            <ul>
+
+
+                 <div class="dropdown">
+               <li>PORTFOLIO ↓</li>
+
+              <div class="dropdown-content">
+    <a href="eventstyling.php"><li>Event Styling</li></a>
+     <a href="boligstyling.php"><li>Bolig Styling</li></a>
+  </div>
+</div>
+
+
+
+                  <a href="webshop.php">
+                    <li>SHOP</li>
+
+                </a>
+
+                <a href="index.php"><img class="nav_logo" src="img/logo_styleeditor-01.png" alt="nav_logo"></a>
+
+
+                <a href="om.php">
+                    <li>OM STYLE EDITOR</li>
+                </a>
+                <a href="kontakt.php">
+                    <li>KONTAKT</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+
 
      <?php include "header.html";?>
 
@@ -37,6 +109,7 @@
             <article class="stylingeventListview">
                 <h1 class="heading" data-title></h1>
                 <p class="description" data-text></p>
+                <button onclick="myFunction()" id="readmore">Læs mere</button>
             </article>
         </template>
 
@@ -47,6 +120,7 @@
             <article class="portfolioListview">
                 <h1 class="heading_events" data-title1></h1>
                 <img src="" alt="">
+
             </article>
         </template>
 
@@ -129,6 +203,25 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+         //------ læs mere knap-----
+
+        function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("readmore");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Læs mindre";
+    moreText.style.display = "inline";
+  }
+}
+
 
     </script>
 

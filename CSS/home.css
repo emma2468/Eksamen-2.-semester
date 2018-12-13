@@ -1,4 +1,119 @@
-/*slideshow*/
+
+.slideshow {
+display: none;
+
+
+}
+
+body {
+    display: block;
+    font-family: 'Heebo', sans-serif;
+     margin: 0;
+}
+
+.image {
+    width: 100%;
+}
+
+.row1{
+      background-color: rgba(176, 119, 98, 0.71);
+}
+
+
+
+/*om side*/
+
+
+
+.stylingeventListview {
+    text-align:justify;
+    padding: 6vw;
+    margin: 2vw;
+    font-size: 0.7em;
+    margin-bottom: 7vw;
+
+
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    color: #B07761;
+    font-weight: 100;
+    font-size: 2em;
+    padding-top: 1em;
+
+}
+
+
+
+
+/*NYESTE PROJEKT*/
+
+.projektListview {
+    background-color: rgba(176, 119, 98, 0.71);
+    margin-bottom: 70px
+
+}
+
+.projektListview p {
+
+    padding: 4vw;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-size: 0.9em;
+}
+
+.projektListview h1 {
+    font-weight: 300;
+    font-size: 1.5em;
+
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 9vw;
+    margin-bottom: -8vw;
+
+}
+
+.projektListview img {
+height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+
+/*VIDEO*/
+
+.videoListview p {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    margin-bottom: 40px
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.videoListview iframe {
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (min-width:767px) {
+
+.mobil_photo{
+   display: none;
+}
+
+
+    /*slideshow*/
 
 .slideshow {
     max-width: 1100px;
@@ -68,235 +183,54 @@
     animation-duration: 1.5s;
 }
 
-body {
-    display: block;
-    font-family: 'Heebo', sans-serif;
-}
 
-.image {
-    width: 100%;
-}
 
-.projektListview {
-    background-color: #B07762;
+    /*NYESTE PROJEKT*/
 
-}
+.row1 {
+    display: flex;
+        padding: 20px;
 
-.projektListview p {
-    font-size: 0.8em;
-    padding: 4vw;
-    background-color: #B07762;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 100;
-}
 
-.projektListview h1 {
-    font-weight: 100;
-    font-size: 1.5em;
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    margin-top: 9vw;
-    margin-bottom: -8vw;
 
-}
+
+
+    }
 
 .projektListview img {
-    max-width: 330px;
-    display: block;
-    margin: auto;
-    padding-top: 6vw;
-}
+      flex: 50%;
 
 
 
-@media screen and (min-width:767px) {
-    .row1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+
     }
 
-    .projektListview img {
-        grid-column: 2/3;
-        grid-row: 1/2;
+.column {
+   flex: 50%;
+
+
+
+
     }
-
-    .column1 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-}
-
-.videoListview p {
-    text-align: center;
-    margin-top: 15vw;
-    margin-bottom: 10vw;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 100;
-    font-size: 1em;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
 
 .videoListview iframe {
     width: 100%;
 }
 
-
-/*om side*/
-
-
-body {
-    margin: 0;
-}
-
-.stylingeventListview {
-    text-align: left;
-    padding: 6vw;
-    margin: 2vw;
-    font-size: 0.7em;
-    margin-bottom: 7vw;
-
-
-}
-
-.stylingeventListview h1 {
-    color: black;
-    font-size: 1.4em;
-
-}
-
-.heading {
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 100;
-    font-size: 2em;
-    padding-top: 1em;
-    color: #e8b931;
-}
-
-.description {
-
-    font-family: 'Heebo', sans-serif;
-    font-weight: 100;
-}
-
-@media screen and (min-width:640px) {
-
-
-    .stylingeventListview {
-        text-align: left;
-        font-size: 0.9em;
-
-
-    }
-
-    .stylingeventListview h1 {
-        color: black;
-        font-size: 1.8em;
-
-    }
-
-    .videoListview p {
-        text-align: center;
-        margin-top: 10vw;
-        margin-bottom: 7vw;
-        font-family: 'Heebo', sans-serif;
-        font-weight: 100;
-        font-size: 1.2em;
-
-    }
-
-    .projektListview {
-        font-size: 0.9em;
-        background-color: #B07762;
-        font-family: 'Heebo', sans-serif;
-        font-weight: 100;
-    }
-
-    .projektListview h1 {
-        font-weight: 100;
-        font-size: 2em;
-        text-align: center;
-        font-family: 'Heebo', sans-serif;
-        margin-top: 8vw;
-
-    }
-
-    .column1 img {
-        max-width: 600px;
-        display: block;
-        margin: auto;
-
-    }
-
-    .videoListview iframe {
-        width: 70%;
-    }
-}
-
-@media screen and (min-width:780px) {
-
-
-    .videoListview p {
-        text-align: center;
-        margin-top: 10vw;
-        margin-bottom: 7vw;
-        font-family: 'Heebo', sans-serif;
-        font-weight: 100;
-        font-size: 1.1em;
-    }
-
-    .projektListview p {
-        font-size: 0.95em;
-        background-color: #B07762;
-        font-family: 'Heebo', sans-serif;
-        font-weight: 100;
-        padding-left: 2vw;
-        padding-right: 1vw;
-
-    }
-
-    .projektListview h1 {
-        font-weight: 100;
-        font-size: 2.2em;
-        text-align: center;
-        font-family: 'Heebo', sans-serif;
-        margin-top: 9vw;
-
-    }
-
-    .projektListview img {
-        max-width: 450px;
-        margin-top: -6vw;
-
-
-    }
-
-    .stylingeventListview {
-        text-align: left;
-        font-size: 0.9em;
-        text-align: left;
-        padding: 10vw;
-
-
-    }
-
-}
-
-@media screen and (min-width:920px) {
-
-    .videoListview iframe {
-        width: 60%;
-    }
 }
 
 @media screen and (min-width:1100px) {
+        /*slideshow*/
+
+.slideshow {
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+
+
+}
+
+
 
 
     .stylingeventListview {
@@ -308,23 +242,38 @@ body {
 
     }
 
-    .stylingeventListview h1 {
-        color: black;
-        font-size: 2em;
-
-    }
-
-    .videoListview iframe {
+     .videoListview iframe {
         width: 50%;
+        height: 500px;
+
     }
+
+
+
+    .projektListview p {
+        font-size: 1.2em;
+
+
+
+    }
+
+
+
+
+
 }
 
 @media screen and (min-width:1300px) {
 
-    .videoListview iframe {
-        width: 40%;
-        margin-top: -2vw;
-    }
+    .slideshow {
+    max-width: 1600px;
+    display: block;
+    margin: auto;
+
+
+}
+
+
 
     .stylingeventListview {
         text-align: left;
@@ -333,39 +282,16 @@ body {
         padding-right: 18vw;
         padding-bottom: 10vw;
         margin: 3vw;
-        font-size: 1.3em;
+
         margin-top: -5vw;
 
 
     }
 
-    .stylingeventListview h1 {
-        color: black;
-        font-size: 2em;
-
-    }
 
     .projektListview p {
         font-size: 1.2em;
-        background-color: #B07762;
-        font-family: 'Heebo', sans-serif;
-        font-weight: 100;
-        padding-left: 2vw;
-        padding-right: 1vw;
 
-    }
-
-    .projektListview h1 {
-        font-weight: 100;
-        font-size: 2.2em;
-        text-align: center;
-        font-family: 'Heebo', sans-serif;
-
-
-    }
-
-    .projektListview img {
-        max-width: 650px;
 
 
     }
@@ -373,18 +299,15 @@ body {
     .videoListview p {
 
         font-size: 1.3em;
-        margin-bottom: 10vw;
+
     }
+    .videoListview iframe {
+        width: 50%;
+        height: 500px;
+
+    }
+
 }
-
-
-
-
-
-
-
-
-
 
 
 /*  INTERAKTIV SVG*/
@@ -408,14 +331,14 @@ body {
     width: 15vw;
     height: 22vw;
 
-    -webkit-animation-name: example;
+    -webkit-animation-name: animation;
     /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s;
     /* Safari 4.0 - 8.0 */
     -webkit-animation-timing-function: steps(2);
     /* Safari 4.0 - 8.0 */
 
-    animation-name: example;
+    animation-name: animation;
 
     animation-fill-mode: both;
 
@@ -427,7 +350,7 @@ body {
 
 }
 
-@-webkit-keyframes example {
+@-webkit-keyframes animation {
     0% {
         background-position: 0 0;
     }
@@ -443,7 +366,6 @@ body {
     position: relative;
     display: inline-block;
 }
-
 
 .button:hover {
     cursor: pointer;
@@ -486,15 +408,16 @@ body {
 /*    --------til toppen knappen----------*/
 
 #button {
+    border-radius: 50%;
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
     font-size: 18px;
-    border: none;
+
     outline: none;
-    background-color: white;
+    background-color: #E6C9C7;
     color: black;
     font-family: 'Open Sans Condensed', sans-serif;
     cursor: pointer;

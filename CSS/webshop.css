@@ -1,9 +1,8 @@
      /*   GENERALT */
 
-
-     .row {
-         display: block;
-     }
+main{
+ display: block;
+}
 
      h1 {
          font-family: 'Heebo', sans-serif;
@@ -11,6 +10,7 @@
          color: rgba(0, 0, 0, 0.56);
          text-decoration: none;
          font-size: 1.3em;
+         margin-bottom: 50px;
 
      }
 
@@ -22,34 +22,31 @@
          font-size: 0.8em;
      }
 
-     hr {
-         background-color: #0B584D;
-         padding: 1px;
-
-         position: absolute;
-
-         margin-top: 20px;
-
-
-     }
 
      .image {
 
-         width: 90%;
-         margin-top: 15px;
-         margin-left: 10px;
+         width: 100%;
+
 
      }
 
-
+   .modal_langbeskrivelse p{
+             margin-top:0;
+             font-size: 1em;
+             padding: 40px 40px;
+         }
 
 
      /*   MODAL*/
 
+    .modal_image{
+    width: 100%;
+}
+
 
      #modal {
-         width: 100vw;
-         height: 100vh;
+         width: 100%;
+         height: 100%;;
          position: fixed;
          background-color: white;
          text-align: center;
@@ -63,7 +60,7 @@
      }
 
      #modal_content {
-         width: 95vw;
+         width: 100%;
          height: 85vh;
          background-color: white;
          /*      background-color: rgba(144, 166, 129, 0.19);*/
@@ -87,30 +84,28 @@
 
 
 
+
+
      /*   NAVIGATION*/
 
 
      .column1 {
          float: left;
-         margin-right: 5px;
+
          font-size: 1em;
+        background-color: #E6C9C7;
+         height: 600px;
+         width: 200px;
+
 
 
 
      }
-
 
      .row:after {
          content: "";
          display: table;
          clear: both;
-     }
-
-     #sorteringsknapper {
-         background-color: #E6C9C7;
-         height: 1000px;
-         width: 170px;
-
      }
 
      .menu_item {
@@ -123,9 +118,14 @@
          font-size: 1.2em;
          border: none;
          display: block;
-         margin-bottom: 0.4em;
+         margin-bottom: 1em;
 
      }
+      p {
+     margin-top: 200px;
+      color: gray;
+     }
+
 
      .menu_item:hover {
          text-decoration: underline;
@@ -137,19 +137,22 @@
      .vare_container {
          font-family: 'Heebo', sans-serif;
          display: inline-table;
+         padding: 20px 20px;
 
      }
 
      .column {
-         float: left;
-         width: 50%;
-         margin-top: -9px;
-         font-size: 1.3em;
-         margin-left: 10px;
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
 
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
 
-
-
+  -webkit-column-rule: 4px double #ff00ff; /* Chrome, Safari, Opera */
+  -moz-column-rule: 4px double #ff00ff; /* Firefox */
+  column-rule: 4px double #ff00ff;
 
 
      }
@@ -159,7 +162,7 @@
          font-weight: 300;
          color: rgba(0, 0, 0, 0.56);
          text-decoration: none;
-         font-size: 1.2em;
+         font-size: 1em;
          text-align: center;
      }
 
@@ -170,14 +173,14 @@
      .kobet {
          font-family: 'Heebo', sans-serif;
          font-weight: 300;
-         font-size: 1.2em;
+         font-size: 1em;
          text-decoration: none;
 
          margin: 0 auto;
 
          background-color: white;
          color: rgba(0, 0, 0, 0.56);
-         border: 1px solid rgba(0, 0, 0, 0.56);
+         border: 0.1px solid rgba(0, 0, 0, 0.56);
 
 
 
@@ -193,76 +196,178 @@
 
          color: black;
          text-decoration: none;
-         font-size: 0.8em;
+         font-size: 1em;
      }
 
 
 
      /* RESPONSIV*/
 
-     @media screen and (min-width:563px) {
-         .column1 {
-             margin-right: 5px;
-
-             }
-
-         #sorteringsknapper {
-
-             height: 700px;
-             width: 250px;
-             font-size: 1.3em;
-
-         }
+ @media screen and (min-width:563px) {
 
 
-         hr{
-             width: 240px;
-         }
-
-         .column {
-
-            column-count: 2;
-             column-fill:balance;
-
-
-
-
-         }
-
-
-
+    .modal_image{
+     width: 20%;
+    height: 40%;
+}
 
 
 
 
      }
 
-     @media screen and (min-width:692px) {
-         .column1 {
-             margin-right: 25px;
-         }
+@media screen and (min-width:585px) {
 
-         #sorteringsknapper {
+    .modal_image{
+     width: 40%;
+    height: 40%;
+}
 
-             height: 700px;
-             width: 250px;
-             font-size: 1.3em;
-
-         }
-
-
-         hr {}
-
-         .column {
-             column-count: 2;
-
-             width: 50%;
-
-
-         }
-         .kobet{
+     .modal_langbeskrivelse p{
+             margin-top:0;
              font-size: 1em;
+             padding: 40px 40px;
          }
+
+    .modal_navn{
+             font-size: 3em;
+         }
+
+     #modal.vis {
+
+         opacity: 1;
+         pointer-events: all;
+         top: 0;
+
+
+     }
+
+     #modal.close {
+         border: none;
+     }
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:695px) {
+
+    .modal_image{
+     width: 40%;
+    height: 40%;
+}
+
+     #modal_content {
+         width: 100%;
+         height: 100%;
+         background-color: white;
+         /*      background-color: rgba(144, 166, 129, 0.19);*/
+         margin: auto;
+
+
+     }
+
+    .modal_langbeskrivelse p{
+             margin-top:0;
+             font-size: 1em;
+             padding: 40px 40px;
+         }
+
+    .modal_navn{
+             font-size: 3em;
+         }
+
+     .column {
+         margin: 0 auto;
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+
+  -webkit-column-rule: 4px double #ff00ff; /* Chrome, Safari, Opera */
+  -moz-column-rule: 4px double #ff00ff; /* Firefox */
+  column-rule: 4px double #ff00ff;
+
+
+     }
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:692px) {
+
+
+         .modal_pris{
+             font-size: 3em;
+             margin-top: 20px;
+         }
+
+         .kob{
+              font-size: 1em;
+
+         }
+
+
+    .modal_image{
+     width: 20%;
+    height: 40%;
+}
+
+
+
+     #modal_content {
+         width: 100%;
+         height: 100%;
+         background-color: white;
+         /*      background-color: rgba(144, 166, 129, 0.19);*/
+         margin: auto;
+
+
+     }
+
+
+
+         .modal_langbeskrivelse p{
+             margin-top:0;
+             font-size: 1em;
+             padding: 40px 40px;
+         }
+
+         .modal_navn{
+             font-size: 3em;
+         }
+
+
+
+     #modal.vis {
+
+         opacity: 1;
+         pointer-events: all;
+         top: 0;
+
+
+     }
+
+     #modal.close {
+         border: none;
+     }
+
+
 
 
 
@@ -272,90 +377,261 @@
 
      }
 
-     @media screen and (min-width:728px) {
+@media screen and (min-width:712px) {
 
 
-         .column1 {
-             margin-right: 48px;
+
+
+         .modal_pris{
+             font-size: 2em;
+             margin-top: 20px;
          }
 
-         .column {
-             column-count: 2;
-
-
-             width: 50%;
-
-
+         .kob{
+              font-size: 1em;
+           padding: 20px;
          }
 
 
-         hr {}
 
-         #sorteringsknapper {
+    .modal_image{
+     width: 40%;
+    height: 40%;
+}
 
-             height: 700px;
-             width: 250px;
 
-         }
+
+     #modal_content {
+         width: 100%;
+         height: 100%;
+         background-color: white;
+         /*      background-color: rgba(144, 166, 129, 0.19);*/
+         margin: auto;
+
+
      }
 
 
 
-     @media screen and (min-width:1000px) {
-
-
-         .column1 {
-             margin-right: 35px;
-
-
+         .modal_langbeskrivelse p{
+             margin-top:0;
+             font-size: 1em;
+             padding: 40px 40px;
          }
+
+         .modal_navn{
+             font-size: 3em;
+         }
+
+
+
+     #modal.vis {
+
+         opacity: 1;
+         pointer-events: all;
+         top: 0;
+
+
+     }
+
+     #modal.close {
+         border: none;
+     }
+
+
+
+
+
+
+
+
+
+     }
+
+
+@media screen and (min-width:728px) {
+
 
 
          .column {
              column-count: 2;
+
 
              width: 70%;
 
 
          }
 
+    .modal_image{
+     width: 20%;
+    height: 40%;
+}
 
-         hr {}
 
-         #sorteringsknapper {
 
-             height: 700px;
-             width: 250px;
+     #modal_content {
+         width: 100%;
+         height: 100%;
 
-         }
+
+
      }
 
-     /*-----til toppen knappen-------*/
 
-     #button {
-         display: none;
-         position: fixed;
-         bottom: 20px;
-         right: 30px;
-         z-index: 99;
-         font-size: 18px;
-         border: none;
-         outline: none;
+
+         .modal_langbeskrivelse p{
+             margin-top:0;
+             font-size: 1em;
+             padding: 40px 40px;
+         }
+
+         .modal_navn{
+             font-size: 3em;
+         }
+
+
+     .modal_pris{
+             font-size: 2em;
+             margin-top: 20px;
+         }
+
+         .kob{
+              font-size: 1em;
+           padding: 20px;
+         }
+
+
+
+
+
+
+
+     }
+
+@media screen and (min-width:999px) {
+
+
+
+
+    .modal_image{
+     width: 20%;
+    height: 40%;
+}
+
+
+
+
+     #modal_content {
+         width: 100%;
+         height: 100%;
          background-color: white;
-         color: black;
-         font-family: 'Open Sans Condensed', sans-serif;
-         cursor: pointer;
-         padding: 5px;
+         /*      background-color: rgba(144, 166, 129, 0.19);*/
+         margin: auto;
+
+
      }
 
-     @media only screen and (max-width: 600px) {
-         #button {
-             bottom: 20px;
-             right: 10px;
+
+
+         .modal_langbeskrivelse p{
+             margin-top:0;
+             font-size: 1em;
+             padding: 40px 40px;
          }
+
+         .modal_navn{
+             font-size: 3em;
+         }
+
+
+
+
+
+
+
      }
 
-     #button:hover {
-         color: darkgrey;
-         font-size: 20px;
+
+@media screen and (min-width:1000px) {
+
+    .column {
+
+
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+
+  -webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 60px; /* Firefox */
+  column-gap: 60px;
+
+  -webkit-column-rule: 4px double #ff00ff; /* Chrome, Safari, Opera */
+  -moz-column-rule: 4px double #0B584D; /* Firefox */
+  column-rule: 4px double #0B584D;
+
+
      }
+
+
+         .modal_image{
+        width: 20%;
+        height: 40%;
+}
+
+         .modal_langbeskrivelse p{
+             margin-top:0;
+             font-size: 1em;
+
+
+        text-align: center;
+
+         }
+
+         .modal_navn{
+             font-size: 3em;
+         }
+
+         .modal_pris{
+             font-size: 2em;
+             margin-top: 20px;
+         }
+
+         .kob{
+              font-size: 1em;
+           padding: 20px;
+         }
+
+
+
+     }
+
+  /*    --------til toppen knappen----------*/
+
+#button {
+    border-radius: 50%;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+
+    outline: none;
+    background-color: #E6C9C7;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #button {
+        bottom: 20px;
+        right: 10px;
+    }
+}
+
+#button:hover {
+    color: darkgrey;
+    font-size: 20px;
+}
