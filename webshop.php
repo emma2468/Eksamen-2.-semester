@@ -70,11 +70,9 @@
             <!--    sorteringsknapper/navigationen blandt vare-->
             <div class="column1">
                 <section id="sorteringsknapper">
-<<<<<<< HEAD
-                    <h1>VÆLG KATRGORI</h1>
-=======
+
                     <h1>VÆLG KATEGORI</h1>
->>>>>>> origin/master
+
                     <div class="knapper">
                         <button class="menu_item" data_kategori="alle">ALLE</button>
                         <button class="menu_item" data_kategori="VINTAGE GLAS">GLAS</button>
