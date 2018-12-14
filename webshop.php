@@ -6,22 +6,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="CSS/webshop.css">
+
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="CSS/webshop.css">
 
     <link href="CSS/footer.css" rel="stylesheet">
     <link href="CSS/header.css" rel="stylesheet">
 
 
+    <title>Style Editor webshop</title>
 
-
-
-
-
-    <title>Style Editor Webshop</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+       <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -49,10 +45,11 @@
         <section id="modal">
             <div id="modal_content">
                 <button class="modal_close">X</button>
-
+    <div class="desktop_modal">
                 <h2 class="modal_navn"></h2>
                 <div class="modal_langbeskrivelse"></div>
                 <img class="modal_image" src="" alt="">
+        </div>
                 <div class="modal_pris"></div>
                 <a class="kob" href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_blank"><button class="kobet">KØB</button></a>
 
@@ -68,7 +65,7 @@
 
 
             <!--    sorteringsknapper/navigationen blandt vare-->
-            <div class="column1">
+
                 <section id="sorteringsknapper">
 
                     <h1>VÆLG KATEGORI</h1>
@@ -83,10 +80,10 @@
                     </div>
 
 
-                    <p>Shoppen foregår over mail, det betyder at køb knappen henviser til Anettes Thyrsteds mail. Skriv til Anette hvis du gerne vil købe varen.</p>
+
                 </section>
 
-            </div>
+
 
             <!--        Template til vare container. Det er hver af varene der er pakket ind i en vare container-->
 
@@ -111,6 +108,7 @@
 
         </div>
 
+        <p>Shoppen foregår over mail, det betyder at køb knappen henviser til Anettes Thyrsteds mail. Skriv til Anette hvis du gerne vil købe varen.</p>
 
     </main>
 

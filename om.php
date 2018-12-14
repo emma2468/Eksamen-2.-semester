@@ -3,27 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/om.css">
+
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <link href="CSS/footer.css" rel="stylesheet">
     <link href="CSS/header.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="CSS/om.css" type="text/css">
 
 
 
-
-    <title>Style Editor Om</title>
-
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <title>Style Editor om</title>
 
 
+       <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 
 

@@ -1,55 +1,13 @@
-     /*   GENERALT */
 
-main{
- display: block;
-}
-
-     h1 {
-         font-family: 'Heebo', sans-serif;
-         font-weight: 300;
-         color: rgba(0, 0, 0, 0.56);
-         text-decoration: none;
-         font-size: 1.3em;
-         margin-bottom: 50px;
-
-     }
-
-     p {
-         font-family: 'Heebo', sans-serif;
-         font-weight: 300;
-         color: rgba(0, 0, 0, 0.56);
-         text-decoration: none;
-         font-size: 0.8em;
-     }
-
-
-     .image {
-
-         width: 100%;
-
-
-     }
-
-   .modal_langbeskrivelse p{
-             margin-top:0;
-             font-size: 1em;
-             padding: 40px 40px;
-         }
-
-
-.row{
-    margin: 20px 20px;
-}
      /*   MODAL*/
 
-    .modal_image{
+.modal_image{
     width: 100%;
 }
 
-
-     #modal {
+#modal {
          width: 100%;
-         height: 100%;;
+         height: 50%;
          position: fixed;
          background-color: white;
          text-align: center;
@@ -60,19 +18,55 @@ main{
          z-index: 99;
 
 
+
+
+
      }
 
-     #modal_content {
+#modal_content {
          width: 100%;
-         height: 85vh;
+         height: 95vh;
          background-color: white;
-         /*      background-color: rgba(144, 166, 129, 0.19);*/
-         margin: auto;
+         overflow: scroll;
+
 
 
      }
 
-     #modal.vis {
+.modal_langbeskrivelse p{
+          font-family: 'Heebo', sans-serif;
+         font-weight: 300;
+         color: rgba(0, 0, 0, 0.56);
+             margin-top:0;
+             font-size: 1em;
+             padding: 40px 40px;
+
+         }
+
+.modal_pris{
+
+
+         font-weight: 300;
+         color: rgba(0, 0, 0, 0.56);
+         text-decoration: none;
+         font-size: 2em;
+         text-align: center;
+         margin-bottom: 10px;
+
+
+}
+
+ .modal_navn{
+           font-family: 'Heebo', sans-serif;
+         font-weight: 600;
+         color: rgba(0, 0, 0, 0.56);
+             margin-top:0;
+             font-size: 2em;
+             padding: 40px 40px;
+    }
+
+
+#modal.vis {
 
          opacity: 1;
          pointer-events: all;
@@ -81,9 +75,82 @@ main{
 
      }
 
-     #modal.close {
+#modal.close {
          border: none;
      }
+
+
+
+ @media screen and (min-width:560px) {
+
+.modal_image{
+    width: 50%;
+    height: 50%;
+}
+
+
+#modal_content {
+         width: 100%;
+         height: 200%;
+         background-color: white;
+         overflow: scroll;
+
+
+
+     }
+
+
+
+
+
+
+
+
+     }
+
+
+
+@media screen and  (min-width:1000px) {
+    .modal_image{
+    width: 50%;
+    height: 50%;
+}
+
+
+.desktop_modal {
+      column-count: 2;
+
+
+      -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 50px; /* Firefox */
+  column-gap: 50px;
+
+
+
+     }
+
+    .modal_langbeskrivelse p{
+             margin-top:0;
+             font-size: 1em;
+             padding: 40px 40px;
+         }
+
+    .modal_navn{
+             margin-top:0;
+             font-size: 2em;
+         }
+
+    .modal_pris{
+
+
+
+         font-size: 2em;
+         text-align: center
+         margin-left: 360px;
+    }
+}
+
+
 
 
 
@@ -92,88 +159,87 @@ main{
      /*   NAVIGATION*/
 
 
-     .column1 {
-         float: left;
-
+.menu_item{
          font-size: 1em;
-        background-color: #E6C9C7;
-         height: 600px;
-         width: 200px;
+        color: rgba(0, 0, 0, 0.56);
+         font-family: 'Heebo', sans-serif;
+         font-weight: 300;
+         margin-bottom: 1em;
+          border: none;
 
 
+}
 
+.knapper {
+text-align: center;
+         border: none;
+
+
+         margin-bottom: 3em;
 
      }
 
-     .row:after {
-         content: "";
-         display: table;
-         clear: both;
-     }
-
-     .menu_item {
-
+p {
          font-family: 'Heebo', sans-serif;
          font-weight: 300;
          color: rgba(0, 0, 0, 0.56);
-         background-color: #E6C9C7;
-
-         font-size: 1.2em;
-         border: none;
-         display: block;
-         margin-bottom: 1em;
-
-     }
-      p {
-     margin-top: 200px;
-      color: gray;
+         text-decoration: none;
+         font-size: 0.8em;
+        margin-top: 10px;
+        text-align: center;
      }
 
+h1 {
+         font-family: 'Heebo', sans-serif;
+         font-weight: 300;
+         color: rgba(0, 0, 0, 0.56);
+         text-decoration: none;
+         font-size: 2em;
+         text-align: center;
 
-     .menu_item:hover {
+     }
+
+.menu_item:hover {
          text-decoration: underline;
      }
 
 
      /* PRODUKTER*/
 
-     .vare_container {
+.image {
+
+         width: 100%;
+
+
+
+     }
+
+.vare_container {
          font-family: 'Heebo', sans-serif;
          display: inline-table;
-         padding: 20px 20px;
+         padding: 40px 40px;
+         margin: 20px 20px;
 
      }
 
-     .column {
-      -webkit-column-count: 1; /* Chrome, Safari, Opera */
-  -moz-column-count: 1; /* Firefox */
-  column-count: 1;
-
-  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 40px; /* Firefox */
-  column-gap: 40px;
-
-  -webkit-column-rule: 4px double #ff00ff; /* Chrome, Safari, Opera */
-  -moz-column-rule: 4px double #ff00ff; /* Firefox */
-  column-rule: 4px double #ff00ff;
 
 
-     }
-
-     .pris {
+.pris {
 
          font-weight: 300;
          color: rgba(0, 0, 0, 0.56);
          text-decoration: none;
          font-size: 1em;
          text-align: center;
+         margin-bottom: 10px;
      }
 
-     .kob {
+.kob {
          text-decoration: none;
      }
 
-     .kobet {
+.kobet {
+         padding: 10px 20px;
          font-family: 'Heebo', sans-serif;
          font-weight: 300;
          font-size: 1em;
@@ -191,101 +257,32 @@ main{
          margin-bottom: 0.4em;
      }
 
-     .title {
+.title {
          text-align: center;
          font-family: 'Heebo', sans-serif;
-         font-weight: 600;
+         font-weight: 300;
 
 
          color: black;
          text-decoration: none;
-         font-size: 1em;
+         font-size: 1.5em;
      }
 
+.column {
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
 
-
-     /* RESPONSIV*/
-
- @media screen and (min-width:563px) {
-
-
-    .modal_image{
-     width: 40%;
-    height: 40%;
-}
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
 
 
 
 
      }
-
-@media screen and (min-width:585px) {
-
-    .modal_image{
-     width: 40%;
-    height: 40%;
-}
-
-     .modal_langbeskrivelse p{
-             margin-top:0;
-             font-size: 1em;
-             padding: 40px 40px;
-         }
-
-    .modal_navn{
-             font-size: 3em;
-         }
-
-     #modal.vis {
-
-         opacity: 1;
-         pointer-events: all;
-         top: 0;
-
-
-     }
-
-     #modal.close {
-         border: none;
-     }
-
-
-
-
-
-
-
-
-
-
-}
 
 @media screen and (min-width:695px) {
-
-    .modal_image{
-     width: 40%;
-    height: 40%;
-}
-
-     #modal_content {
-         width: 100%;
-         height: 100%;
-         background-color: white;
-         /*      background-color: rgba(144, 166, 129, 0.19);*/
-         margin: auto;
-
-
-     }
-
-    .modal_langbeskrivelse p{
-             margin-top:0;
-             font-size: 1em;
-             padding: 40px 40px;
-         }
-
-    .modal_navn{
-             font-size: 3em;
-         }
 
      .column {
          margin: 0 auto;
@@ -312,146 +309,6 @@ main{
 
 }
 
-@media screen and (min-width:692px) {
-
-
-         .modal_pris{
-             font-size: 3em;
-             margin-top: 20px;
-         }
-
-         .kob{
-              font-size: 1em;
-
-         }
-
-
-    .modal_image{
-     width: 20%;
-    height: 40%;
-}
-
-
-
-     #modal_content {
-         width: 100%;
-         height: 100%;
-         background-color: white;
-         /*      background-color: rgba(144, 166, 129, 0.19);*/
-         margin: auto;
-
-
-     }
-
-
-
-         .modal_langbeskrivelse p{
-             margin-top:0;
-             font-size: 1em;
-             padding: 40px 40px;
-         }
-
-         .modal_navn{
-             font-size: 3em;
-         }
-
-
-
-     #modal.vis {
-
-         opacity: 1;
-         pointer-events: all;
-         top: 0;
-
-
-     }
-
-     #modal.close {
-         border: none;
-     }
-
-
-
-
-
-
-
-
-
-     }
-
-@media screen and (min-width:712px) {
-
-
-
-
-         .modal_pris{
-             font-size: 2em;
-             margin-top: 20px;
-         }
-
-         .kob{
-              font-size: 1em;
-           padding: 20px;
-         }
-
-
-
-    .modal_image{
-     width: 40%;
-    height: 40%;
-}
-
-
-
-     #modal_content {
-         width: 100%;
-         height: 100%;
-         background-color: white;
-         /*      background-color: rgba(144, 166, 129, 0.19);*/
-         margin: auto;
-
-
-     }
-
-
-
-         .modal_langbeskrivelse p{
-             margin-top:0;
-             font-size: 1em;
-             padding: 40px 40px;
-         }
-
-         .modal_navn{
-             font-size: 3em;
-         }
-
-
-
-     #modal.vis {
-
-         opacity: 1;
-         pointer-events: all;
-         top: 0;
-
-
-     }
-
-     #modal.close {
-         border: none;
-     }
-
-
-
-
-
-
-
-
-
-     }
-
-
 @media screen and (min-width:728px) {
 
 
@@ -465,97 +322,13 @@ main{
 
          }
 
-    .modal_image{
-     width: 20%;
-    height: 40%;
-}
-
-
-
-     #modal_content {
-         width: 100%;
-         height: 100%;
-
-
+    .
 
      }
-
-
-
-         .modal_langbeskrivelse p{
-             margin-top:0;
-             font-size: 1em;
-             padding: 40px 40px;
-         }
-
-         .modal_navn{
-             font-size: 3em;
-         }
-
-
-     .modal_pris{
-             font-size: 2em;
-             margin-top: 20px;
-         }
-
-         .kob{
-              font-size: 1em;
-           padding: 20px;
-         }
-
-
-
-
-
-
-
-     }
-
-@media screen and (min-width:999px) {
-
-
-
-
-    .modal_image{
-     width: 20%;
-    height: 40%;
-}
-
-
-
-
-     #modal_content {
-         width: 100%;
-         height: 100%;
-         background-color: white;
-         /*      background-color: rgba(144, 166, 129, 0.19);*/
-         margin: auto;
-
-
-     }
-
-
-
-         .modal_langbeskrivelse p{
-             margin-top:0;
-             font-size: 1em;
-             padding: 40px 40px;
-         }
-
-         .modal_navn{
-             font-size: 3em;
-         }
-
-
-
-
-
-
-
-     }
-
 
 @media screen and (min-width:1000px) {
+
+
 
     .column {
 
@@ -574,39 +347,20 @@ main{
 
 
      }
-
-
-         .modal_image{
-        width: 20%;
-        height: 40%;
 }
 
-         .modal_langbeskrivelse p{
-             margin-top:0;
-             font-size: 1em;
-
-
-        text-align: center;
-
-         }
-
-         .modal_navn{
-             font-size: 3em;
-         }
-
-         .modal_pris{
-             font-size: 2em;
-             margin-top: 20px;
-         }
-
-         .kob{
-              font-size: 1em;
-           padding: 20px;
-         }
 
 
 
-     }
+
+
+
+
+
+
+}
+
+
 
   /*    --------til toppen knappen----------*/
 
