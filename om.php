@@ -10,7 +10,7 @@
     <link href="CSS/footer.css" rel="stylesheet">
     <link href="CSS/header.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="CSS/om.css" type="text/css">
+      <link rel="stylesheet" href="CSS/om.css" type="text/css">
 
 
 
