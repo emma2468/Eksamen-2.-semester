@@ -32,9 +32,7 @@
 
 <body>
 
-<div class="menu">
 <?php include 'header.php';?>
-</div>
 
    <main>
     <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
