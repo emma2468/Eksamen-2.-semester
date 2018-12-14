@@ -52,7 +52,7 @@ body {
 
 .projektListview {
     background-color: rgba(176, 119, 98, 0.71);
-    margin-bottom: 70px
+
 
 }
 
@@ -90,7 +90,8 @@ height: 100%;
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
     font-size: 1em;
-    margin-bottom: 40px
+    margin-top: 75px;
+
 }
 
 a {
@@ -208,6 +209,9 @@ a {
 
     }
 
+
+
+
 .videoListview iframe {
     width: 100%;
 }
@@ -245,12 +249,7 @@ a {
 
 
 
-    .projektListview p {
-        font-size: 1.2em;
 
-
-
-    }
 
 
 
@@ -284,12 +283,6 @@ a {
     }
 
 
-    .projektListview p {
-        font-size: 1.2em;
-
-
-
-    }
 
     .videoListview p {
 
@@ -306,7 +299,7 @@ a {
 
 
 /*  INTERAKTIV SVG*/
-@media only screen and (max-width:793px) {
+@media only screen and (max-width:999px) {
 
     #santa_container {
         display: none;
@@ -344,6 +337,9 @@ a {
 
 
 }
+
+
+
 
 @-webkit-keyframes animation {
     0% {

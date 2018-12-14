@@ -51,8 +51,11 @@
         </div>
                 <div class="modal_pris"></div>
 
-    <a class="kob" href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_blank"><button class="kobet">KØB</button></a>
+    <a class="kob" href="mailto:anette@styleeditor.dk?Subject=Shopping &body=
+    Hej Style Editor,
+    jeg kunne godt tænke med at købe (x) antal af (navnet på prodtuktet)
 
+    - med venlig hilsen (deres navn)" target="_blank"><button class="kobet">KØB</button></a>
 
 
             </div>
