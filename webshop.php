@@ -51,7 +51,8 @@
                 <img class="modal_image" src="" alt="">
         </div>
                 <div class="modal_pris"></div>
-                <a class="kob" href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_blank"><button class="kobet">KØB</button></a>
+
+    <a class="kob" href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_blank"><button class="kobet">KØB</button></a>
 
 
 
@@ -101,7 +102,7 @@
 
                         <div class="pris"></div>
 
-                      <a class="kob" href="mailto:anette@styleeditor.dk?Subject=Hello%20again" target="_blank"><button class="kobet">KØB</button></a>
+
                     </article>
                 </template>
             </div>
@@ -173,7 +174,6 @@
                     let klon = vareTarget.cloneNode(true).content;
 
                     klon.querySelector(".pris").textContent = vare.acf.pris + " kr";
-                    klon.querySelector(".kob").href = vare.acf.kob;
                     klon.querySelector(".title").textContent = vare.title.rendered;
                     klon.querySelector(".image").src = vare.acf.image;
                     klon.querySelector(".image").alt = vare.acf.image;
@@ -204,6 +204,8 @@
             modal.querySelector(".modal_langbeskrivelse").innerHTML = varen.content.rendered;
 
             modal.querySelector(".modal_pris").textContent = varen.acf.pris + " Kr.";
+
+
 
 
 
