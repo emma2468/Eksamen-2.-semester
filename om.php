@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
 
 
@@ -32,9 +32,9 @@
 
 <body>
 
-<div class="menu">
-<?php include 'header.php';?>
-</div>
+
+<?php include "header.php";?>
+
 
    <main>
     <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
@@ -111,7 +111,7 @@
 
 </script>
 
- <?php include "footer.html";?>
+<?php include "footer.html";?>
 
 </body>
 
