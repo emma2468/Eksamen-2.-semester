@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link href="CSS/footer.css" rel="stylesheet">
     <link href="CSS/header.css" rel="stylesheet">
 
-      <link rel="stylesheet" href="CSS/om.css" type="text/css">
+  <link rel="stylesheet" href="CSS/om.css" type="text/css">
 
 
 
@@ -32,8 +32,9 @@
 
 <body>
 
-
-    <?php include "header.html";?>
+<div class="menu">
+<?php include 'header.php';?>
+</div>
 
    <main>
     <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
