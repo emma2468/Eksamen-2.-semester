@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Style Editors om side indeholder information om Anette Thrysted som er ophavsmand til virksomheden">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400" rel="stylesheet">
 
 

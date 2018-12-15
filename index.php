@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Style Editors index side er homepage for hele hjemmesiden og indeholder standart information om virksomheden">
 
 
     <link rel="stylesheet" href="CSS/home.css" type="text/css">
