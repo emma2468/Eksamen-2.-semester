@@ -220,6 +220,7 @@
 
 
             modal.querySelector(".modal_image").src = varen.acf.image;
+               modal.querySelector(".modal_image").alt = varen.acf.image;
 
             modal.querySelector(".modal_navn").textContent = varen.title.rendered;
 

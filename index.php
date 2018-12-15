@@ -251,6 +251,7 @@
                 klon.querySelector("[data-title1]").textContent = events.title.rendered;
                 klon.querySelector("[data-text]").innerHTML = events.content.rendered;
                 klon.querySelector("img").src = events.acf.image;
+                klon.querySelector("img").alt = events.acf.image;
                 eventContainer.appendChild(klon);
             })
         }

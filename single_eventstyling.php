@@ -146,13 +146,28 @@
             dest.querySelector(".data-langbeskrivelse").innerHTML = event.content.rendered;
 
             dest.querySelector(".image1").src = event.acf.image1;
+            dest.querySelector(".image1").alt = event.acf.image1;
+
             dest.querySelector(".image2").src = event.acf.image2;
+            dest.querySelector(".image2").alt = event.acf.image2;
+
             dest.querySelector(".image3").src = event.acf.image3;
+            dest.querySelector(".image3").alt = event.acf.image3;
+
             dest.querySelector(".image4").src = event.acf.image4;
+            dest.querySelector(".image4").alt = event.acf.image4;
+
             dest.querySelector(".image5").src = event.acf.image5;
+            dest.querySelector(".image5").alt = event.acf.image5;
+
             dest.querySelector(".image6").src = event.acf.image6;
+            dest.querySelector(".image6").alt = event.acf.image6;
+
             dest.querySelector(".image7").src = event.acf.image7;
+            dest.querySelector(".image7").alt = event.acf.image7;
+
             dest.querySelector(".image8").src = event.acf.image8;
+            dest.querySelector(".image8").alt = event.acf.image8;
 
 
         }
