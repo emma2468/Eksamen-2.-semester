@@ -36,6 +36,7 @@ ul {
 .nav_logo {
     width: 250px;
     display: none;
+     cursor: pointer;
 
 }
 
@@ -140,6 +141,7 @@ overflow: hidden;
     transition: .3s;
 
 
+
 }
 
 .dropdown-content {
@@ -154,6 +156,7 @@ width: 20%;
     left: 0%;
     transition: .3s;
     text-align-last: left;
+     cursor: pointer;
 
 
 

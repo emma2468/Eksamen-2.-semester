@@ -1,109 +1,11 @@
 
+/*SLIDESHOW*/
+
 .slideshow {
 display: none;
 
 
 }
-
-body {
-    display: block;
-    font-family: 'Heebo', sans-serif;
-     margin: 0;
-}
-
-.image {
-    width: 100%;
-}
-
-.row1{
-      background-color: rgba(176, 119, 98, 0.71);
-}
-
-
-
-/*om side*/
-
-
-
-.stylingeventListview {
-    text-align:justify;
-    padding: 6vw;
-    margin: 2vw;
-    font-size: 0.7em;
-    margin-bottom: 7vw;
-
-
-}
-
-.heading {
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    color: #B07761;
-    font-weight: 100;
-    font-size: 2em;
-    padding-top: 1em;
-
-}
-
-
-
-
-/*NYESTE PROJEKT*/
-
-.projektListview {
-    background-color: rgba(176, 119, 98, 0.71);
-
-
-}
-
-.projektListview p {
-
-    padding: 4vw;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 100;
-    font-size: 0.9em;
-}
-
-.projektListview h1 {
-    font-weight: 300;
-    font-size: 1.5em;
-
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    margin-top: 9vw;
-    margin-bottom: -8vw;
-
-}
-
-.projektListview img {
-height: 100%;
-    width: 100%;
-    display: block;
-
-}
-
-
-/*VIDEO*/
-
-.videoListview p {
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 100;
-    font-size: 1em;
-    margin-top: 75px;
-
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.videoListview iframe {
-    width: 100%;
-}
-
-
 
 
 
@@ -113,8 +15,6 @@ a {
    display: none;
 }
 
-
-    /*slideshow*/
 
 .slideshow {
     max-width: 1100px;
@@ -186,40 +86,10 @@ a {
 
 
 
-    /*NYESTE PROJEKT*/
-
-.row1 {
-    display: flex;
-
-    }
-
-.projektListview img {
-      flex: 50%;
-
-
-
-
-    }
-
-.column {
-   flex: 50%;
-
-
-
-
-    }
-
-
-
-
-.videoListview iframe {
-    width: 100%;
-}
 
 }
 
 @media screen and (min-width:1100px) {
-        /*slideshow*/
 
 .slideshow {
     max-width: 1400px;
@@ -229,29 +99,14 @@ a {
 
 }
 
-
-
-
-    .stylingeventListview {
+.stylingeventListview {
         text-align: left;
         padding: 2vw;
         margin: 3vw;
-        font-size: 1.5em;
+        font-size: 1em;
 
 
     }
-
-     .videoListview iframe {
-        width: 50%;
-        height: 500px;
-
-    }
-
-
-
-
-
-
 
 
 
@@ -259,13 +114,80 @@ a {
 
 @media screen and (min-width:1300px) {
 
-    .slideshow {
+.slideshow {
     max-width: 1600px;
     display: block;
     margin: auto;
 
 
 }
+
+.stylingeventListview {
+        text-align: left;
+        padding-top: 10vw;
+        padding-left: 18vw;
+        padding-right: 18vw;
+        padding-bottom: 10vw;
+        margin: 3vw;
+
+        margin-top: -5vw;
+
+
+    }
+
+}
+
+
+
+/*OM SIDE*/
+
+
+
+
+body {
+    display: block;
+    font-family: 'Heebo', sans-serif;
+     margin: 0;
+}
+
+.image {
+    width: 100%;
+}
+
+.row1{
+      background-color: rgba(176, 119, 98, 0.71);
+}
+
+
+
+/*om side*/
+
+.stylingeventListview {
+    text-align:justify;
+    padding: 6vw;
+    margin: 2vw;
+    font-size: 1em;
+    margin-bottom: 7vw;
+
+
+
+
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    color: #005860;
+    font-weight: 100;
+    font-size: 2em;
+    padding-top: 1em;
+
+}
+
+
+@media screen and (min-width:1300px) {
+
+
 
 
 
@@ -284,18 +206,99 @@ a {
 
 
 
-    .videoListview p {
 
-        font-size: 1.3em;
 
-    }
-    .videoListview iframe {
-        width: 50%;
-        height: 500px;
-
-    }
 
 }
+
+
+/*NYESTE PROJEKT*/
+
+.projektListview {
+   background-color: #005860;
+
+
+}
+
+.projektListview p {
+
+    padding: 4vw;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.projektListview h1 {
+    font-weight: 300;
+    font-size: 1.5em;
+
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 9vw;
+    margin-bottom: -8vw;
+
+}
+
+.projektListview img {
+
+    width: 100%;
+    display: block;
+
+}
+
+
+@media screen and (min-width:767px) {
+
+.row1 {
+    display: flex;
+
+    }
+
+.projektListview img {
+      flex: 50%;
+    height: 100%;
+
+
+
+
+
+    }
+
+.column {
+   flex: 50%;
+
+
+
+
+    }
+
+
+
+
+}
+
+
+
+/*VIDEO*/
+
+.videoListview p {
+    text-align: center;
+
+
+    margin-top: 75px;
+
+}
+
+
+.videoListview iframe {
+  width: 90%;
+    height: 500px;
+
+    cursor: pointer;
+}
+
+
+
 
 
 /*  INTERAKTIV SVG*/
@@ -308,7 +311,7 @@ a {
 
 #santa_container {
     position: absolute;
-    top: auto;
+    top: 100%;
     right: 40px;
 }
 
@@ -337,8 +340,6 @@ a {
 
 
 }
-
-
 
 
 @-webkit-keyframes animation {

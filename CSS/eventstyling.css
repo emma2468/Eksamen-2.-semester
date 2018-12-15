@@ -24,15 +24,10 @@ body{
     font-size: 1em;
 }
 
-#readmore{
-    background: none;
-    padding: 20px 20px;
-    position: relative;
-    bottom: 40px;
-    left: 20px;
-
-
+img{
+    cursor: pointer;
 }
+
 
 
 
@@ -94,7 +89,7 @@ body{
     .description{
     padding-left: 10em;
     padding-right: 10em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 }
 @media screen and (min-width:1000px){
@@ -119,7 +114,7 @@ body{
     .description{
     padding-left: 14em;
     padding-right: 14em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 }
 
@@ -134,7 +129,7 @@ body{
     .description{
     padding-left: 16em;
     padding-right: 16em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 }
 
