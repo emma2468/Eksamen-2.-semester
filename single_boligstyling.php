@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Style Editors single page til bolig indeholder yderligere infromation om det event der trykket på fra siden bolig styling">
 
     <link rel="stylesheet" href="CSS/single_boligstyling.css" type="text/css">
 

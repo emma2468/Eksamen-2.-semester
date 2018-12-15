@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Style Editors event styling side indeholder alt fra anette thyrsted portfolie om event styling">
 
     <link rel="stylesheet" href="CSS/eventstyling.css" type="text/css">
 

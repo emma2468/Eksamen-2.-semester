@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Style Editors bolig styling side indeholder alt fra anette thyrsted portfolie om bolig styling">
     <link rel="stylesheet" href="CSS/boligstyling.css" type="text/css">
 
 
