@@ -39,7 +39,7 @@
     <main>
         <!--MOBIL -->
          <div class="mobil_photo">
-             <img src="img/mobil_photo.jpg" style="height: 20em" width="100%;">
+             <img src="img/mobil_photo.png" style="height: 20em" width="100%;">
          </div>
 
           <!--DESKTOP -->
