@@ -38,15 +38,14 @@
 
     <main>
         <!--MOBIL -->
-<<<<<<< HEAD
+
         <div class="mobil_photo">
             <img src="img/mobil_photo.png" style="height: 20em" width="100%;">
         </div>
-=======
-         <div class="mobil_photo">
-             <img src="img/mobil_photo.png" alt="Stylist, Style, Dekorationer" style="height: 20em" width="100%;">
-         </div>
->>>>>>> origin/master
+
+        <div class="mobil_photo">
+            <img src="img/mobil_photo.png" alt="Stylist, Style, Dekorationer" style="height: 20em" width="100%;">
+        </div>
 
         <!--DESKTOP -->
 
@@ -56,31 +55,28 @@
             <!--Første slide-->
             <div class="slide fade">
 
-<<<<<<< HEAD
+
                 <a href="eventstyling.php"> <img src="img/event-03.png" alt=""></a>
-=======
-            <a href="eventstyling.php"> <img src="img/event-03.png" alt="Event, Style, Dekorationer, Dekoratør, Dekoration, Kreativ, Kreative ideer, Projektleder, Planlægger"></a>
->>>>>>> origin/master
+
+                <a href="eventstyling.php"> <img src="img/event-03.png" alt="Event, Style, Dekorationer, Dekoratør, Dekoration, Kreativ, Kreative ideer, Projektleder, Planlægger"></a>
 
             </div>
             <!--Andet slide-->
             <div class="slide fade">
 
-<<<<<<< HEAD
+
                 <a href="boligstyling.php"><img src="img/bolig-01.png" alt=""></a>
-=======
-            <a href="boligstyling.php"><img src="img/bolig-01.png" alt="Bolig, Stylist, Visuelt identitet, Projektleder, Kreativ"></a>
->>>>>>> origin/master
+
+                <a href="boligstyling.php"><img src="img/bolig-01.png" alt="Bolig, Stylist, Visuelt identitet, Projektleder, Kreativ"></a>
+
 
             </div>
             <!--Tredje slide-->
             <div class="slide fade">
 
-<<<<<<< HEAD
                 <a href="webshop.php"> <img src="img/shop-02.png" alt=""></a>
-=======
-            <a href="webshop.php"> <img src="img/shop-02.png" alt="Bolig, Branding, Glas, Vintage, Vintage online butik, Gave shop, Vintage dekoration, Kreative ideer, Dekoration shop, Vontage shop, Kreativ shop, Tallerkner"></a>
->>>>>>> origin/master
+
+                <a href="webshop.php"> <img src="img/shop-02.png" alt="Bolig, Branding, Glas, Vintage, Vintage online butik, Gave shop, Vintage dekoration, Kreative ideer, Dekoration shop, Vontage shop, Kreativ shop, Tallerkner"></a>
 
             </div>
 
@@ -175,9 +171,6 @@
 
 
     <script>
-
-
-
         let slideNumber = 1;
         let slides = document.querySelectorAll(".slide");
 
