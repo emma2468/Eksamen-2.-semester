@@ -153,6 +153,9 @@
 
 
     <script>
+
+
+
         let slideNumber = 1;
         let slides = document.querySelectorAll(".slide");
 
