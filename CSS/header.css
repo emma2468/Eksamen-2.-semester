@@ -20,7 +20,10 @@
     background: white;
     border: none;
     justify-self: end;
-    padding: 1em;
+    padding-bottom: 3em;
+    padding-right: 1em;
+    padding-left: 3em;
+    padding-top: 3em;
 }
 
 ul {
@@ -37,11 +40,11 @@ ul {
     width: 250px;
     display: none;
      cursor: pointer;
-
 }
 
 .nav_burger_logo {
     width: 240px;
+    padding-top: 1.5em
 }
 
 li {
@@ -56,6 +59,11 @@ li {
 
 a{
         text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: darkgrey;
 }
 
 .bar1,
