@@ -40,7 +40,7 @@
         <!--MOBIL -->
 
         <div class="mobil_photo">
-            <img src="img/mobil_photo.png" alt="Stylist, Style, Dekorationer" style="height: 20em" width="100%;">
+            <img src="img/mobil_photo.png" alt="Stylist, Style, Dekorationer">
         </div>
 
         <!--DESKTOP -->
