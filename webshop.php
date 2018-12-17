@@ -142,7 +142,6 @@
             //  HTML loades før json loades
             document.addEventListener("DOMContentLoaded", getJson);
 
-
             //variabel til at vise alle vare
             let allVare;
 
@@ -247,6 +246,9 @@
             console.log("skjulModal");
             modal.classList.remove("vis");
                 }
+
+
+
 
         //----------til toppen knappen--------
 
