@@ -21,7 +21,7 @@
           font-weight: 300;
           color: rgba(0, 0, 0, 0.56);
           text-decoration: none;
-        color: white;
+        color: black;
 
       }
 
@@ -79,8 +79,8 @@ h5{
       }
 
     #Kontakt_information h4, a{
-        color: ;
-color: #65b0ba;
+        color: white;
+
       }
 
     .column {
