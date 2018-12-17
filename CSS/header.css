@@ -1,12 +1,8 @@
-
-
 .mobil {
     display: grid;
     background-color: white;
     width: 100%;
     margin-bottom: 40px;
-
-
 }
 
 .burgermenu {
@@ -39,7 +35,7 @@ ul {
 .nav_logo {
     width: 250px;
     display: none;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .nav_burger_logo {
@@ -57,12 +53,12 @@ li {
     font-weight: 100;
 }
 
-a{
-        text-decoration: none;
+a {
+    text-decoration: none;
     color: black;
 }
 
-a:hover{
+a:hover {
     color: darkgrey;
 }
 
@@ -80,8 +76,6 @@ nav {
     max-height: 0px;
     overflow: hidden;
     transition: 0s;
-    table-layout: red;
-    color: blue;
 }
 
 nav.show {
@@ -109,118 +103,83 @@ nav.show {
         display: none;
     }
 
-    .mobil{
+    .mobil {
         display: none;
     }
 
-    .desktop_nav{
+    .desktop_nav {
         margin-bottom: 50px;
-              display: grid;
-           max-height: 200px;
+        display: grid;
+        max-height: 200px;
 
 
     }
 
     .list {
-    padding-top: 30px;
-    cursor: pointer;
-    text-align: center;
-    font-family: heebo, sans-serif;
-    text-decoration: none;
-    color: black;
-    font-weight: 100;
-}
-
-    .billede_li{
-         margin-top: -10%;
-    cursor: pointer;
-
+        padding-top: 30px;
+        cursor: pointer;
+        text-align: center;
+        font-family: heebo, sans-serif;
+        text-decoration: none;
+        color: black;
+        font-weight: 100;
     }
 
+    .billede_li {
+        margin-top: -10%;
+        cursor: pointer;
 
+    }
 
     .nav_logo {
 
         display: block;
         justify-self: center;
-
-
-
-
     }
-
-
 
     ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
-          padding-top: 30px;
+        padding-top: 30px;
     }
 
-    a{
-    text-decoration: none;
-     text-align: center;
-    font-family: heebo, sans-serif;
-    text-decoration: none;
-    color: black;
-    font-weight: 100;
-     margin-bottom: 5%;
-     margin-top: 5%;
-
-
-
-
+    a {
+        text-decoration: none;
+        text-align: center;
+        font-family: heebo, sans-serif;
+        text-decoration: none;
+        color: black;
+        font-weight: 100;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 
-        .dropdown {
-overflow: hidden;
-    transition: .3s;
+    .dropdown {
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    .dropdown-content {
+        z-index: 90;
+        display: none;
 
 
+        width: 15%;
+        padding: 12px 16px;
 
-
-
-}
-
-
-
-.dropdown-content {
-    z-index: 90;
-display:none;
-
-
-width: 15%;
-  padding: 12px 16px;
-
-position: absolute;
-    top: 13%;
-    transition: .3s;
+        position: absolute;
+        top: 13%;
+        transition: .3s;
         text-align-last: center;
-    left: 2%;
-
-
-
-
-
-
-
-}
-
-.dropdown:hover .dropdown-content {
-    display: inline-grid;
-    grid-auto-rows: 2;
-    background-color: white;
-    position: fixed;
-    text-align-last: center;
-
-
-
+        left: 2%;
     }
 
-
-
+    .dropdown:hover .dropdown-content {
+        display: inline-grid;
+        grid-auto-rows: 2px;
+        background-color: white;
+        position: fixed;
+        text-align-last: center;
+    }
 }
-
-
-
