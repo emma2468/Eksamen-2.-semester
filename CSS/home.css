@@ -310,39 +310,37 @@ body {
     }
 }
 
+/*indsat*/
 #santa_container {
     position: absolute;
     top: 100%;
     right: 40px;
 }
 
+/*nissens spritesheet er pålagt som et background-image, og udfyldt optagt til bevægelse ved at givedet et animations-name*/
 #santa_sprite {
     background-image: url(../nisse-01.svg);
     background-size: 200% 100%;
+
 
     width: 15vw;
     height: 22vw;
 
     -webkit-animation-name: animation;
-    /* Safari 4.0 - 8.0 */
+
     -webkit-animation-duration: 1s;
-    /* Safari 4.0 - 8.0 */
+
     -webkit-animation-timing-function: steps(2);
-    /* Safari 4.0 - 8.0 */
 
     animation-name: animation;
 
     animation-fill-mode: both;
 
-
     animation-iteration-count: infinite;
-
-
-
 
 }
 
-
+/*Her har vi påsat bevægelse på animationens spritesheet*/
 @-webkit-keyframes animation {
     0% {
         background-position: 0 0;
