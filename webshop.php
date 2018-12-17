@@ -138,24 +138,24 @@
 
 
     <script>
-        // der gør at HTML loades før json loades
-        document.addEventListener("DOMContentLoaded", getJson);
 
+            //  HTML loades før json loades
+            document.addEventListener("DOMContentLoaded", getJson);
 
-        //variabel til at vise alle events
-        let allVare;
+            //variabel til at vise alle vare
+            let allVare;
 
-        //variabler der henter template ned fra html
-        let vareTarget = document.querySelector(".vare_template");
-        let vareOutPut = document.querySelector(".vare");
+            //variabler der henter template ned fra html
+            let vareTarget = document.querySelector(".vare_template");
+            let vareOutPut = document.querySelector(".vare");
 
-        vareFilter = "alle";
+            vareFilter = "alle";
 
-        //variabel til modal vindue section
-        let modal = document.querySelector("#modal");
+            //variabel til modal vindue section
+            let modal = document.querySelector("#modal");
 
-        //henter json fra wordpress
-        async function getJson() {
+            //henter json fra wordpress
+            async function getJson() {
             let jsondata = await fetch("http://milleprintzlau.dk/2.semester/styleeditor_site/wordpress/wp-json/wp/v2/shop/?per_page=100");
 
             allVare = await jsondata.json();
@@ -163,36 +163,39 @@
             visVare();
         }
 
-        //forEach loop til sortering af genre / sorteringsknapperne
-        document.querySelectorAll(".menu_item").forEach(knap => {
+            //forEach loop til sortering af genre / sorteringsknapperne
+            document.querySelectorAll(".menu_item").forEach(knap => {
             knap.addEventListener("click", filtrering);
-        })
+                    })
 
-        //funtion til filtrering
-        function filtrering() {
+            //funtion til filtrering
+            function filtrering() {
+
             vareOutPut.textContent = "";
             vareFilter = this.getAttribute("data_kategori");
             visVare();
-        }
+                    }
 
-        //function til at vise events
-        function visVare() {
+            //function til at vise Vare
+            function visVare() {
 
             //upsitedown fra wordpress
             allVare.reverse();
             allVare.forEach(vare => {
-                //if statement til filtreringen
-                if (vareFilter == vare.acf.genre) {
+
+
+            //if statement til filtreringen
+            if (vareFilter == vare.acf.genre) {
                     udskriv();
                 } else if (vareFilter == "alle") {
                     udskriv();
                 }
 
-                //udskrivningen når man trykker på en af filtreringsknapperne
+            //udskrivningen når man trykker på en af filtreringsknapperne
 
-                function udskriv() {
+            function udskriv() {
 
-                    // indkaldelse af indholdet af hver Vare
+                    // indkaldelse af indholdet af vare
 
                     let klon = vareTarget.cloneNode(true).content;
 
@@ -209,10 +212,10 @@
                     vareOutPut.appendChild(klon);
                 }
             })
-        }
+                }
 
-        //  modal vindue function
-        function visModal(varen) {
+            //  modal vindue function
+            function visModal(varen) {
 
             console.log("visModal");
 
@@ -237,13 +240,15 @@
         }
 
 
-        //function til at skjule modal igen når man trykker på .modal_close
+            //function til at skjule modal igen når man trykker på .modal_close
 
-
-        function skjulModal() {
+            function skjulModal() {
             console.log("skjulModal");
             modal.classList.remove("vis");
-        }
+                }
+
+
+
 
         //----------til toppen knappen--------
 
