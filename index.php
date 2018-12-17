@@ -10,7 +10,7 @@
 
 
     <link rel="stylesheet" href="CSS/home.css" type="text/css">
-   <link href="CSS/footer.css" rel="stylesheet">
+    <link href="CSS/footer.css" rel="stylesheet">
     <link href="CSS/header.css" rel="stylesheet">
 
 
@@ -18,7 +18,7 @@
     <title>Style Editor</title>
 
 
-      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -32,37 +32,41 @@
 
 <body>
 
-  <?php include "header.html";?>
+    <?php include "header.html";?>
 
 
 
     <main>
         <!--MOBIL -->
-         <div class="mobil_photo">
-             <img src="img/mobil_photo.png" style="height: 20em" width="100%;">
-         </div>
-
-          <!--DESKTOP -->
-          <div class="slideshow">
-
-
-        <div class="slide fade">
-
-            <a href="eventstyling.php"> <img src="img/event-03.png" alt=""></a>
-
-        </div>
-        <div class="slide fade">
-
-            <a href="boligstyling.php"><img src="img/bolig-01.png" alt=""></a>
-
-        </div>
-        <div class="slide fade">
-
-            <a href="webshop.php"> <img src="img/shop-02.png" alt=""></a>
-
+        <div class="mobil_photo">
+            <img src="img/mobil_photo.png" style="height: 20em" width="100%;">
         </div>
 
-    </div>
+        <!--DESKTOP -->
+
+        <!--Div'erne opdeler elementer i slideshowet-->
+        <div class="slideshow">
+
+            <!--Første slide-->
+            <div class="slide fade">
+
+                <a href="eventstyling.php"> <img src="img/event-03.png" alt=""></a>
+
+            </div>
+            <!--Andet slide-->
+            <div class="slide fade">
+
+                <a href="boligstyling.php"><img src="img/bolig-01.png" alt=""></a>
+
+            </div>
+            <!--Tredje slide-->
+            <div class="slide fade">
+
+                <a href="webshop.php"> <img src="img/shop-02.png" alt=""></a>
+
+            </div>
+
+        </div>
 
 
         <button onclick="topFunction()" id="button" title="Go to top">⥣</button>
@@ -176,6 +180,7 @@
             showSlides(slideNumber += n);
         }
 
+        //Autoslider funktion
         function autoSlide() {
             console.log(slideNumber);
             if (slideNumber <= slides.length) {
@@ -287,9 +292,6 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
-
-
 
     </script>
 
