@@ -142,7 +142,7 @@ function myFunction() {
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "tilbage";
+    btnText.innerHTML = "Læs mindre";
     moreText.style.display = "inline";
   }
 }

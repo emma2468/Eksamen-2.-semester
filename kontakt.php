@@ -57,7 +57,7 @@
 
 
             <div class="column">
-                <h1>Adminstration</h1>
+                <h1>Administration</h1>
                 <h4>Adresse | Kildedalen 1, 2900 Hellerup</h4>
 
 
@@ -67,9 +67,6 @@
                 <h2>Style Editor Kontor</h2>
                 <h4>Adresse | Rentemestervej 39, 2400 København</h4>
             </div>
-
-
-            <h5>PAKKER SKAL LEVERS HOS ADMINSTRATION</h5>
 
         </div>
 

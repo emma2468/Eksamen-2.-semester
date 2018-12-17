@@ -173,12 +173,6 @@ border: none;
      }
 
 
-
-
-
-
-
-
      }
 
 @media screen and  (min-width:1000px) {
@@ -350,9 +344,9 @@ h1 {
   -moz-column-gap: 40px; /* Firefox */
   column-gap: 40px;
 
-  -webkit-column-rule: 4px double #0B584D; /* Chrome, Safari, Opera */
-  -moz-column-rule: 4px double #0B584D; /* Firefox */
-  column-rule: 4px double #0B584D;
+  -webkit-column-rule: 4px #0B584D; /* Chrome, Safari, Opera */
+  -moz-column-rule: 4px #0B584D; /* Firefox */
+  column-rule: 4px #0B584D;
 
 
      }

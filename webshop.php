@@ -37,7 +37,7 @@
 
         <div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-  <p>Shoppen foregår over mail, det betyder at køb knappen henviser til Anettes Thyrsteds mail. Skriv til Anette hvis du gerne vil købe varen.</p>
+  <p>Køb foregår via mail, og betaling ved kontooverførsel eller mobilepay. Først når jeg har modtaget en mail, sender jeg en faktura.</p>
 </div>
 
 
@@ -66,7 +66,7 @@
     <a class="kob" href="mailto:anette@styleeditor.dk?Subject=webshop &body=
     Hej Style Editor,%0D%0A%0D%0A
                      %0D%0A%0D%0A
-    jeg kunne godt tænke med at købe (x) antal af (navnet på prodtuktet)%0D%0A%0D%0A
+    jeg vil gerne bestille (x) antal af (navnet på prodtuktet)%0D%0A%0D%0A
                   %0D%0A%0D%0A
      - med venlig hilsen (deres navn)"><button class="kobet">KØB</button></a>
 
@@ -90,7 +90,7 @@
                         <button class="menu_item" data_kategori="alle">ALLE</button>
                         <button class="menu_item" data_kategori="VINTAGE GLAS">GLAS</button>
                         <button class="menu_item" data_kategori="TALLERKENER">TALLERKNER</button>
-                        <button class="menu_item" data_kategori="RODEBUNKEN">RODEBUNKE</button>
+                        <button class="menu_item" data_kategori="RODEBUNKEN">UNIKA</button>
 
 
                     </div>
