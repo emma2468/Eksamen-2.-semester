@@ -111,7 +111,7 @@ nav.show {
     nav {
         max-height: 200px;
         display: grid;
-        grid-template-columns: repeat (6, 1fr);
+
     }
 
 
@@ -169,7 +169,6 @@ width: 20%;
     display: block;}
 
 
-}
 
 
 @media screen and (min-width:800px) {
