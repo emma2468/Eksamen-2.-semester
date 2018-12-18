@@ -177,7 +177,7 @@ nav.show {
 
     .dropdown:hover .dropdown-content {
         display: inline-grid;
-        grid-auto-rows: 2px;
+
         background-color: white;
         position: fixed;
         text-align-last: center;
