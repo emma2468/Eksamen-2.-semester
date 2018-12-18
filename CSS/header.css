@@ -4,7 +4,11 @@
     width: 100%;
     margin-bottom: 40px;
 }
+.mobil_nav{
+    display: none;
 
+
+}
 .burgermenu {
     background-color: white;
     display: grid;
@@ -32,19 +36,18 @@ ul {
 
 }
 
-.nav_logo {
-    width: 250px;
-    display: none;
-    cursor: pointer;
+.nav_burger_logo {
+    width: 140px;
+
 }
 
-.nav_burger_logo {
-    width: 240px;
-    padding-top: 1.5em
+.nav_burger_logo:hover{
+    opacity: 0.6;
 }
+
 
 li {
-    padding-top: 30px;
+   padding-top: 30px;
     cursor: pointer;
     text-align: center;
     font-family: heebo, sans-serif;
@@ -53,9 +56,13 @@ li {
     font-weight: 100;
 }
 
+
 a {
     text-decoration: none;
     color: black;
+
+
+
 }
 
 a:hover {
@@ -79,6 +86,7 @@ nav {
 
 nav.show {
     max-height: 500px;
+    display:block;
 }
 
 .change .bar1 {
@@ -93,7 +101,9 @@ nav.show {
     transform: rotate(45deg) translate(-4px, -8px);
 }
 
-
+.desktop_nav{
+    display: none;
+}
 
 
 @media screen and (min-width:768px) {
@@ -109,13 +119,20 @@ nav.show {
     .desktop_nav {
         margin-bottom: 50px;
         display: grid;
+         padding-top: 30px;
+
 
 
 
     }
 
+    li {
+   padding-top: 0px;
+
+}
+
     .list {
-        padding-top: 30px;
+
         cursor: pointer;
         text-align: center;
         font-family: heebo, sans-serif;
@@ -125,7 +142,7 @@ nav.show {
     }
 
     .billede_li {
-        margin-top: -10%;
+        margin-top: -30%;
         cursor: pointer;
 
     }
@@ -134,9 +151,59 @@ nav.show {
 
         display: block;
         justify-self: center;
+        width: 250px;
+        height: 200px;
+
+
     }
 
-    ul {
+     .nav_logo:hover{
+    opacity: 0.6;
+}
+
+
+
+@media screen and (min-width:767px) {
+  .nav_logo {
+
+       padding-top: 10px;
+        width: 250px;
+        height: 200px;
+
+
+    }
+
+}
+
+@media screen and (min-width:1100px) {
+  .nav_logo {
+
+       padding-top: 20px;
+        width: 250px;
+        height: 200px;
+
+
+    }
+
+
+}
+
+@media screen and (min-width:1300px) {
+  .nav_logo {
+
+       padding-top: 20px;
+        width: 250px;
+        height: 200px;
+
+
+    }
+
+}
+
+
+
+
+    ul, dropdown {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
@@ -159,16 +226,15 @@ nav.show {
   display: inline-block;
         overflow: hidden;
         transition: .3s;
+        padding-top: 0px;
     }
 
     .dropdown-content {
         z-index: 90;
         display: none;
 
-   position:absolute;
-        top: 60px;
+   position:relative;
 
-        width: 20%;
 
 
         transition: .3s;
@@ -184,6 +250,7 @@ nav.show {
 
 
 }
+
     .dropdown:hover .dropdown-content {
        display:inline-grid;
 

@@ -33,6 +33,9 @@
     width: 100%;
 
 }
+.modal_image:hover{
+    opacity: 0.6;
+}
 
 #modal {
          width: 100%;
@@ -283,6 +286,10 @@ h1 {
 
 
      }
+
+.image:hover{
+    opacity: 0.6;
+}
 
 .vare_container {
          font-family: 'Heebo', sans-serif;

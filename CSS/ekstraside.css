@@ -15,6 +15,13 @@
         cursor: pointer;
     }
 
+img:hover{
+    opacity: 0.6;
+}
+
+
+
+
     h1 {
         grid-column: 1/2;
         grid-row: 4/5;

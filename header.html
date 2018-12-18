@@ -1,7 +1,7 @@
   <link href="CSS/header.css" rel="stylesheet">
 
        <div class="burgermenu">
-        <a href="index.php"><img class="nav_burger_logo" src="img/logo.png" alt="nav_logo"></a>
+        <a href="index.php"><img class="nav_burger_logo" src="img/logo-05.png" alt="nav_logo"></a>
         <div class="burger">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -13,13 +13,14 @@
         <!--Navigationsbaren på laptop-->
         <nav class="mobil_nav">
             <ul>
-<li><a href="ekstraside.php">PORTFOLIO</a></li>
 
-<li><a href="webshop.php">SHOP</a></li>
+                <li><a href="ekstraside.php">PORTFOLIO</a></li>
 
-<li> <a href="om.php">OM STYLE EDITOR</a></li>
+                <li><a href="webshop.php">SHOP</a></li>
 
-<li><a href="kontakt.php">KONTAKT</a></li>
+                <li> <a href="om.php">OM STYLE EDITOR</a></li>
+
+                <li><a href="kontakt.php">KONTAKT</a></li>
 
              </ul>
         </nav>
@@ -30,11 +31,11 @@
         <!--Navigationsbaren på laptop-->
           <nav class="desktop_nav">
 
+   <ul>
+
+       <li class="dropwdown_li"> <ul class="dropdown">
 
 
-        <div class="dropdown">
-
-              <ul>
 
                <li>PORTFOLIO ↓ </li>
 
@@ -45,10 +46,13 @@
 
 
 
+               </ul></li>
+
+
 
 <li class="links"><a href="webshop.php">SHOP</a></li>
 
-<li class="billede_li"><a href="index.php"><img class="nav_logo" src="img/logo.png" alt="nav_logo"></a>
+<li class="billede_li"><a href="index.php"><img class="nav_logo" src="img/logo-05.png" alt="nav_logo"></a>
 
 <li class="links"><a href="om.php">OM STYLE EDITOR</a></li>
 
@@ -57,7 +61,7 @@
             </ul>
 
 
-               </div>
+
         </nav>
     </header>
 
@@ -66,11 +70,12 @@
 function onLoad() {
     function toggleMenu() {
         document.querySelector(".burger").classList.toggle("change");
-        document.querySelector("nav").classList.toggle("show");
+        document.querySelector(".mobil_nav").classList.toggle("show");
+
     }
     document.querySelector(".burger").addEventListener("click", toggleMenu);
     document.querySelector("ul").addEventListener("click", toggleMenu);
-     }
+}
        //Vil først starte når DOM-indholdet er loaded
 document.addEventListener("DOMContentLoaded", function (event) {
     onLoad();
