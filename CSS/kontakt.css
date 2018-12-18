@@ -78,10 +78,14 @@ h5{
     font-size: 1em;
       }
 
-    #Kontakt_information h4, a{
+    #Kontakt_information h4{
         color: white;
 
       }
+    #Kontakt_information a {
+          color: white;
+    }
+
 
     .column {
     float: left;
