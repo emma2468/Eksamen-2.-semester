@@ -48,7 +48,7 @@
         <template data-template1>
             <article class="portfolioListview">
                 <h1 class="heading_events" data-title1></h1>
-                <img src="" alt="">
+                <img class="portfolio_billede" src="" alt="">
             </article>
         </template>
 

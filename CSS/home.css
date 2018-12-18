@@ -239,6 +239,7 @@ body {
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
     font-size: 1em;
+    color: white;
 }
 
 .projektListview h1 {
@@ -250,6 +251,8 @@ body {
     margin-top: 9vw;
     margin-bottom: -8vw;
 
+    color: white;
+
 }
 
 .projektListview img {
@@ -257,9 +260,6 @@ body {
     width: 100%;
     display: block;
 
-}
-.projektListview img:hover{
-    opacity: 0.6;
 }
 
 
